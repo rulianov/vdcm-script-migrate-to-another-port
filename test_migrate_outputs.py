@@ -232,6 +232,29 @@ class SafetyTests(unittest.TestCase):
                 {"pmtPid": {"pid": 481, "pidProperty": 0}},
             )
 
+    def test_mpts_pid_owner_is_created_before_remapped_service(self):
+        services = [
+            {"output": {"id": "remapped"}, "routing": {"inputService": {"id": "a"}},
+             "pids": {"pmt": 48, "pcr": 51, "es": [
+                 {"pid": 49, "sourcePid": 201}, {"pid": 51, "sourcePid": 481}]}},
+            {"output": {"id": "owner"}, "routing": {"inputService": {"id": "b"}},
+             "pids": {"pmt": 480, "pcr": 481, "es": [
+                 {"pid": 201, "sourcePid": 201}, {"pid": 481, "sourcePid": 481}]}},
+        ]
+        self.migrator.get = Mock(return_value={"pmt": 480, "pcr": 481})
+        ordered = self.migrator.service_creation_order(services)
+        self.assertEqual([s["output"]["id"] for s in ordered], ["owner", "remapped"])
+
+    def test_mpts_cyclic_pid_dependencies_keep_original_order(self):
+        services = [
+            {"output": {"id": "a"}, "routing": {},
+             "pids": {"es": [{"pid": 201, "sourcePid": 202}]}},
+            {"output": {"id": "b"}, "routing": {},
+             "pids": {"es": [{"pid": 202, "sourcePid": 201}]}},
+        ]
+        with self.assertLogs(level="WARNING"):
+            self.assertEqual(self.migrator.service_creation_order(services), services)
+
     def test_es_order_change_is_tolerated_only_when_allowed_and_set_is_identical(self):
         original = {"pmt": 100, "es": [{"pid": 101, "streamType": 27}, {"pid": 201, "streamType": 15}]}
         reordered = {"pmt": 100, "es": [{"pid": 201, "streamType": 15}, {"pid": 101, "streamType": 27}]}

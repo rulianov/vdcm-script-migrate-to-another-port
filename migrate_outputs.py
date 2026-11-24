@@ -696,8 +696,53 @@ class Migrator:
             time.sleep(0.5)
             actual = alternate_activation(self.get(path))
 
+    def service_creation_order(self, services: list[dict[str, Any]]) -> list[dict[str, Any]]:
+        if len(services) < 2:
+            return services
+
+        assigned: list[set[int]] = []
+        displaced: list[set[int]] = []
+        for service in services:
+            pids = service["pids"]
+            used = {pids[k] for k in ("pmt", "pcr") if isinstance(pids.get(k), int)}
+            used.update(es["pid"] for es in pids.get("es", [])
+                        if isinstance(es.get("pid"), int))
+            needed = {es["sourcePid"] for es in pids.get("es", [])
+                      if isinstance(es.get("sourcePid"), int)
+                      and es["sourcePid"] != es.get("pid")}
+            input_id = (service["routing"].get("inputService") or {}).get("id")
+            if input_id:
+                input_pids = self.get(resource_path("/api/v2/InputServices", input_id) + "/Pids")
+                for key in ("pmt", "pcr"):
+                    value = input_pids.get(key)
+                    if isinstance(value, int) and value != pids.get(key):
+                        needed.add(value)
+            assigned.append(used)
+            displaced.append(needed)
+
+        dependencies = [{owner for owner in range(len(services))
+                         if owner != index and assigned[owner] & displaced[index]}
+                        for index in range(len(services))]
+        remaining = list(range(len(services)))
+        order: list[int] = []
+        while remaining:
+            ready = next((index for index in remaining if not dependencies[index]), None)
+            if ready is None:
+                logging.warning("MPTS PID allocation dependencies are cyclic; keeping original service "
+                                "order and requiring exact PID verification")
+                return services
+            order.append(ready)
+            remaining.remove(ready)
+            for index in remaining:
+                dependencies[index].discard(ready)
+        if order != list(range(len(services))):
+            logging.info("MPTS service creation order adjusted to preserve PID assignments: %s",
+                         ", ".join(services[index]["output"]["id"] for index in order))
+        return [services[index] for index in order]
+
     def clone(self, snapshot: dict[str, Any], destination: str, entry: dict[str, Any]) -> str:
         self.ensure_no_hidden_secrets(snapshot)
+        services_in_order = self.service_creation_order(snapshot["services"])
         original = snapshot["output"]
         payload = self.schemas.payload(TS, "POST", original)
         payload["interface"] = destination
@@ -713,7 +758,7 @@ class Migrator:
         schema = self.schemas.operation(TS, "POST")
         self.wait(new_path, payload, schema)
         service_parts: dict[str, dict[str, Any]] = {}
-        for service in snapshot["services"]:
+        for service in services_in_order:
             source_service = service["output"]
             service_config = self.schemas.payload(SERVICES, "POST", source_service)
             service_config["outputTS"] = {"id": new_id}

@@ -1,0 +1,25 @@
+2026-11-23 22:12:26,374 INFO [MainThread] Run directory: 20261124T061226Z-33ea1479
+2026-11-23 22:12:26,374 WARNING [MainThread] TLS certificate verification disabled by --insecure
+2026-11-23 22:12:31,487 INFO [MainThread] 2 XGRESS outputs selected: Port 3 (Data2) -> Port 1 (Data1)
+2026-11-23 22:12:31,487 INFO [MainThread] Concurrency requested=4 effective=2
+2026-11-23 22:12:40,201 INFO [migrate_0] START 00010002-0000-0003-0000-000000000001 worker=migrate_0
+2026-11-23 22:12:40,201 INFO [migrate_1] START 00010002-0000-0004-0000-000000000001 worker=migrate_1
+2026-11-23 22:12:48,489 INFO [migrate_0] PATCH /api/v2/OutputTSs/00010002-0000-0003-0000-000000000001
+2026-11-23 22:12:48,723 INFO [migrate_1] PATCH /api/v2/OutputTSs/00010002-0000-0004-0000-000000000001
+2026-11-23 22:12:48,952 WARNING [migrate_0] In-place PATCH unavailable: PATCH /api/v2/OutputTSs/00010002-0000-0003-0000-000000000001: HTTP 409: {"id": "00010002-0000-0003-0000-000000000001", "url": "https://10.90.245.127:8443/api/v2/OutputTSs/00010002-0000-0003-0000-000000000001", "sw_ref": "1-2-3--", "errors": [{"field_name": "interface", "value": "Data1", "error": "Restricted to change the 'interface' value"}]}
+2026-11-23 22:12:49,194 WARNING [migrate_1] In-place PATCH unavailable: PATCH /api/v2/OutputTSs/00010002-0000-0004-0000-000000000001: HTTP 409: {"id": "00010002-0000-0004-0000-000000000001", "url": "https://10.90.245.127:8443/api/v2/OutputTSs/00010002-0000-0004-0000-000000000001", "sw_ref": "1-2-4--", "errors": [{"field_name": "interface", "value": "Data1", "error": "Restricted to change the 'interface' value"}]}
+2026-11-23 22:12:49,518 INFO [migrate_0] POST /api/v2/OutputTSs?results=true
+2026-11-23 22:12:49,519 INFO [migrate_1] POST /api/v2/OutputTSs?results=true
+2026-11-23 22:12:51,379 INFO [migrate_1] POST /api/v3/OutputServiceRoutings?results=true
+2026-11-23 22:12:51,379 INFO [migrate_0] POST /api/v3/OutputServiceRoutings?results=true
+2026-11-23 22:13:19,231 WARNING [migrate_1] Read retry 1: GET /api/v2/OutputTSs/00010000-0000-0000-0000-000000000001/SiComponents/CatSettings: HTTP unavailable: <urlopen error _ssl.c:1112: The handshake operation timed out>
+2026-11-23 22:13:50,233 INFO [migrate_0] PATCH /api/v2/OutputTSs/00010000-0000-0002-0000-000000000001
+2026-11-23 22:13:50,364 INFO [migrate_1] PATCH /api/v2/OutputTSs/00010000-0000-0000-0000-000000000001
+2026-11-23 22:14:33,773 WARNING [migrate_0] Read retry 1: GET /api/v2/OutputTSs/00010000-0000-0002-0000-000000000001/RealignmentMux: HTTP unavailable: <urlopen error _ssl.c:1112: The handshake operation timed out>
+2026-11-23 22:14:33,970 WARNING [migrate_1] Read retry 1: GET /api/v2/OutputTSs/00010000-0000-0000-0000-000000000001/RealignmentMux: HTTP unavailable: <urlopen error timed out>
+2026-11-23 22:14:57,512 INFO [migrate_1] DELETE /api/v2/OutputTSs/00010002-0000-0004-0000-000000000001
+2026-11-23 22:14:57,776 INFO [migrate_0] DELETE /api/v2/OutputTSs/00010002-0000-0003-0000-000000000001
+2026-11-23 22:15:27,010 WARNING [migrate_0] Read retry 1: GET /api/v2/OutputServices/00010000-0000-0002-0000-000100000001/Components: HTTP unavailable: <urlopen error _ssl.c:1112: The handshake operation timed out>
+2026-11-23 22:15:32,120 INFO [migrate_1] SUCCESS 00010002-0000-0004-0000-000000000001 -> 00010000-0000-0000-0000-000000000001
+2026-11-23 22:15:32,850 INFO [migrate_0] SUCCESS 00010002-0000-0003-0000-000000000001 -> 00010000-0000-0002-0000-000000000001
+2026-11-23 22:15:32,875 INFO [MainThread] SUMMARY selected=2 migrated=2 planned=0 unsuccessful=0

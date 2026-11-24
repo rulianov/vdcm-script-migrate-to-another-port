@@ -38,9 +38,10 @@ The password is prompted. Review the plan, then replace `--dry-run` with
 Reports persist in `runs` **beside the executable**, not inside its temporary
 extraction directory; use `--report-dir` if that location is not writable.
 
-The executable is also deployed on the approved build host at
+An older executable may also be present on the build host at
 `/root/vdcm-script-migrate-to-another-port/dist/migrate-outputs-linux-x86_64`.
-The project copy includes:
+Copy the current project executable to the target host after rebuilding. The
+project copy includes:
 
 * `dist/migrate-outputs-linux-x86_64.sha256`: verify using
   `sha256sum -c migrate-outputs-linux-x86_64.sha256` from `dist`.
@@ -296,6 +297,11 @@ It creates configuration/API load: never run it on production without approval.
 * Reprovisioning changes output/service resource IDs. External systems referencing
   those IDs must be updated separately. Unknown fields and unsupported required
   schemas fail the affected output rather than silently discarding configuration.
+* For multi-service output TSs (MPTS), services are recreated in an order inferred
+  from their recorded PID assignments and input PIDs, so a service using the
+  original PID is created before one remapped because of a collision. Exact PID
+  verification remains mandatory. If the order cannot reproduce the original
+  assignments, the original output is retained and the failed replacement is Off.
 * Automatically generated `syncUUID` values change with the destination port.
   As approved, `generateSyncUUID=true` is retained and the generated UUID is
   allowed to change. Manually configured UUIDs are copied and checked.

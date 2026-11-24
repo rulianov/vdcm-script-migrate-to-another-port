@@ -1,0 +1,29 @@
+2026-11-23 22:16:49,289 INFO [MainThread] Run directory: 20261124T061649Z-ec4c28ed
+2026-11-23 22:16:49,289 WARNING [MainThread] TLS certificate verification disabled by --insecure
+2026-11-23 22:17:02,602 INFO [MainThread] 3 XGRESS outputs selected: Port 1 (Data1) -> Port 3 (Data2)
+2026-11-23 22:17:02,603 INFO [MainThread] Concurrency requested=4 effective=3
+2026-11-23 22:17:14,544 INFO [migrate_0] START 00010000-0000-0000-0000-000000000001 worker=migrate_0
+2026-11-23 22:17:14,545 INFO [migrate_1] START 00010000-0000-0001-0000-000000000001 worker=migrate_1
+2026-11-23 22:17:14,545 INFO [migrate_2] START 00010000-0000-0002-0000-000000000001 worker=migrate_2
+2026-11-23 22:17:23,126 INFO [migrate_2] PATCH /api/v2/OutputTSs/00010000-0000-0002-0000-000000000001
+2026-11-23 22:17:23,550 INFO [migrate_0] PATCH /api/v2/OutputTSs/00010000-0000-0000-0000-000000000001
+2026-11-23 22:17:23,701 WARNING [migrate_2] In-place PATCH unavailable: PATCH /api/v2/OutputTSs/00010000-0000-0002-0000-000000000001: HTTP 409: {"id": "00010000-0000-0002-0000-000000000001", "url": "https://10.90.245.127:8443/api/v2/OutputTSs/00010000-0000-0002-0000-000000000001", "sw_ref": "1-0-2--", "errors": [{"field_name": "interface", "value": "Data2", "error": "Restricted to change the 'interface' value"}]}
+2026-11-23 22:17:24,032 WARNING [migrate_0] In-place PATCH unavailable: PATCH /api/v2/OutputTSs/00010000-0000-0000-0000-000000000001: HTTP 409: {"id": "00010000-0000-0000-0000-000000000001", "url": "https://10.90.245.127:8443/api/v2/OutputTSs/00010000-0000-0000-0000-000000000001", "sw_ref": "1-0-0--", "errors": [{"field_name": "interface", "value": "Data2", "error": "Restricted to change the 'interface' value"}]}
+2026-11-23 22:17:24,165 INFO [migrate_2] POST /api/v2/OutputTSs?results=true
+2026-11-23 22:17:24,165 INFO [migrate_0] POST /api/v2/OutputTSs?results=true
+2026-11-23 22:17:26,102 INFO [migrate_0] POST /api/v3/OutputServiceRoutings?results=true
+2026-11-23 22:17:26,102 INFO [migrate_2] POST /api/v3/OutputServiceRoutings?results=true
+2026-11-23 22:17:27,930 INFO [migrate_1] MPTS service creation order adjusted to preserve PID assignments: 00010000-0000-0001-0000-000200000001, 00010000-0000-0001-0000-000300000001
+2026-11-23 22:17:27,941 INFO [migrate_1] POST /api/v2/OutputTSs?results=true
+2026-11-23 22:17:29,483 INFO [migrate_1] POST /api/v3/OutputServiceRoutings?results=true
+2026-11-23 22:17:34,604 INFO [migrate_1] POST /api/v3/OutputServiceRoutings?results=true
+2026-11-23 22:18:03,446 INFO [migrate_2] PATCH /api/v2/OutputTSs/00010002-0000-0004-0000-000000000001
+2026-11-23 22:18:03,594 INFO [migrate_0] PATCH /api/v2/OutputTSs/00010002-0000-0003-0000-000000000001
+2026-11-23 22:18:31,946 INFO [migrate_1] PATCH /api/v2/OutputTSs/00010002-0000-0005-0000-000000000001
+2026-11-23 22:18:41,688 INFO [migrate_2] DELETE /api/v2/OutputTSs/00010000-0000-0002-0000-000000000001
+2026-11-23 22:18:41,951 INFO [migrate_0] DELETE /api/v2/OutputTSs/00010000-0000-0000-0000-000000000001
+2026-11-23 22:18:51,308 INFO [migrate_2] SUCCESS 00010000-0000-0002-0000-000000000001 -> 00010002-0000-0004-0000-000000000001
+2026-11-23 22:18:51,433 INFO [migrate_0] SUCCESS 00010000-0000-0000-0000-000000000001 -> 00010002-0000-0003-0000-000000000001
+2026-11-23 22:19:06,806 INFO [migrate_1] DELETE /api/v2/OutputTSs/00010000-0000-0001-0000-000000000001
+2026-11-23 22:19:27,289 INFO [migrate_1] SUCCESS 00010000-0000-0001-0000-000000000001 -> 00010002-0000-0005-0000-000000000001
+2026-11-23 22:19:27,347 INFO [MainThread] SUMMARY selected=3 migrated=3 planned=0 unsuccessful=0

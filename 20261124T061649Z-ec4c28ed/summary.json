@@ -1,0 +1,12 @@
+{
+  "selected": 3,
+  "migrated": 3,
+  "unsuccessful": 0,
+  "workers_requested": 4,
+  "workers_effective": 3,
+  "backup_seconds": 11.913344083,
+  "migration_seconds": 132.760564125,
+  "total_seconds": 158.07416312499998,
+  "outputs_per_second": 0.022597071801949906,
+  "duration_p95_seconds": 132.745326166
+}

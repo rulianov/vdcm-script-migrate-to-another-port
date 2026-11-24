@@ -1,0 +1,3360 @@
+[
+  {
+    "output": {
+      "id": "00010002-0000-0004-0000-000000000001",
+      "url": "https://10.90.245.127:8443/api/v2/OutputTSs/00010002-0000-0004-0000-000000000001",
+      "sw_ref": "1-2-4--",
+      "outputType": "XGRESS",
+      "interface": "Data2",
+      "targetIp": "235.1.1.3",
+      "targetUdp": 50000,
+      "name": "",
+      "TSID": 1,
+      "ONID": 1,
+      "tags": [],
+      "sourceIPAddress": "Interface",
+      "sourceUdp": 8111,
+      "rateMode": "CBR",
+      "rate": 40000000,
+      "outputProtocol": "RTP",
+      "tableStandard": "DVB",
+      "streaming": "On",
+      "generateSyncUUID": true,
+      "syncUUID": "80000000-0000-eb01-0103-c35000020001",
+      "TOS": 0,
+      "TTL": 64,
+      "UdpSize": 7,
+      "tsScrambling": {
+        "scramblingAction": "Scrambling",
+        "mode": "DvbScrambling",
+        "bissMode": "BISS_1",
+        "algorithm": "CSA",
+        "initializationVector": "00000000000000000000000000000000",
+        "forceScramblingBits": false,
+        "sparVariant": 0,
+        "controlWordSync": "Disabled_for_CW",
+        "clearStrongPairingEnforcement": false,
+        "sessionWordConfigured": false,
+        "injectedIdentifierConfigured": null,
+        "parity": null,
+        "operatingMode": "Simulcrypt",
+        "cwGenerationMode": "Conformance",
+        "packetsNotScrambled": "None",
+        "scrambledPercentage": 100,
+        "nullStuffingPackets": "Scrambled",
+        "scramblingDescriptor": "Disabled",
+        "allowEcmRemapping": false
+      },
+      "probeTS": {
+        "targetIp": "",
+        "targetUdp": 0,
+        "sourceIPAddress": null,
+        "streaming": null
+      },
+      "URC_DataPidMeasurements": {
+        "mode": "Disabled",
+        "type": [],
+        "host": null,
+        "udpPort": null,
+        "poolName": null,
+        "minBandwidthRequestInterval": null
+      },
+      "alarmSettings": {
+        "payloadBitrateTooLow": {
+          "enable": false,
+          "threshold": 36000000,
+          "triggerForTsOutputLoss": true
+        },
+        "stuffingRateTooLow": {
+          "enable": false,
+          "threshold": 1000000,
+          "triggerForTsOutputLoss": true
+        },
+        "serviceLoss": {
+          "triggerForTsOutputLossForServiceLoss": "AnyOneService"
+        },
+        "serviceNotScrambled": {
+          "triggerForTsOutputLoss": true
+        }
+      },
+      "channelId": "",
+      "componentSharing": "ShareAlways",
+      "autoPassRules": {
+        "tsAutoPass": {
+          "removeAutoPassedOnRuleRemoval": true,
+          "removeServiceIfNotPresentInPAT": false,
+          "tsAutoPassRules": []
+        },
+        "serviceAutoPass": {
+          "passESs": true,
+          "passECMs": true,
+          "passES_ECMs": true
+        }
+      },
+      "vlan": {
+        "vlanId": null
+      },
+      "tsFEC": {
+        "triggerMode": "Disabled",
+        "sendingArrangement": "BlockAligned",
+        "columnFEC": {
+          "targetIp": null,
+          "targetUdp": null
+        },
+        "rowFEC": {
+          "targetIp": null,
+          "targetUdp": null
+        },
+        "D_ColDepth": 6,
+        "L_RowLength": 10
+      },
+      "rip": {
+        "enable": false,
+        "normalMetric": 1,
+        "alarmMetric": 16,
+        "routeTag": 0
+      },
+      "targetIpOverrule": null
+    },
+    "state": "migrated",
+    "snapshot": {
+      "output": {
+        "id": "00010002-0000-0004-0000-000000000001",
+        "url": "https://10.90.245.127:8443/api/v2/OutputTSs/00010002-0000-0004-0000-000000000001",
+        "sw_ref": "1-2-4--",
+        "outputType": "XGRESS",
+        "interface": "Data2",
+        "targetIp": "235.1.1.3",
+        "targetUdp": 50000,
+        "name": "",
+        "TSID": 1,
+        "ONID": 1,
+        "tags": [],
+        "sourceIPAddress": "Interface",
+        "sourceUdp": 8111,
+        "rateMode": "CBR",
+        "rate": 40000000,
+        "outputProtocol": "RTP",
+        "tableStandard": "DVB",
+        "streaming": "On",
+        "generateSyncUUID": true,
+        "syncUUID": "80000000-0000-eb01-0103-c35000020001",
+        "TOS": 0,
+        "TTL": 64,
+        "UdpSize": 7,
+        "tsScrambling": {
+          "scramblingAction": "Scrambling",
+          "mode": "DvbScrambling",
+          "bissMode": "BISS_1",
+          "algorithm": "CSA",
+          "initializationVector": "00000000000000000000000000000000",
+          "forceScramblingBits": false,
+          "sparVariant": 0,
+          "controlWordSync": "Disabled_for_CW",
+          "clearStrongPairingEnforcement": false,
+          "sessionWordConfigured": false,
+          "injectedIdentifierConfigured": null,
+          "parity": null,
+          "operatingMode": "Simulcrypt",
+          "cwGenerationMode": "Conformance",
+          "packetsNotScrambled": "None",
+          "scrambledPercentage": 100,
+          "nullStuffingPackets": "Scrambled",
+          "scramblingDescriptor": "Disabled",
+          "allowEcmRemapping": false
+        },
+        "probeTS": {
+          "targetIp": "",
+          "targetUdp": 0,
+          "sourceIPAddress": null,
+          "streaming": null
+        },
+        "URC_DataPidMeasurements": {
+          "mode": "Disabled",
+          "type": [],
+          "host": null,
+          "udpPort": null,
+          "poolName": null,
+          "minBandwidthRequestInterval": null
+        },
+        "alarmSettings": {
+          "payloadBitrateTooLow": {
+            "enable": false,
+            "threshold": 36000000,
+            "triggerForTsOutputLoss": true
+          },
+          "stuffingRateTooLow": {
+            "enable": false,
+            "threshold": 1000000,
+            "triggerForTsOutputLoss": true
+          },
+          "serviceLoss": {
+            "triggerForTsOutputLossForServiceLoss": "AnyOneService"
+          },
+          "serviceNotScrambled": {
+            "triggerForTsOutputLoss": true
+          }
+        },
+        "channelId": "",
+        "componentSharing": "ShareAlways",
+        "autoPassRules": {
+          "tsAutoPass": {
+            "removeAutoPassedOnRuleRemoval": true,
+            "removeServiceIfNotPresentInPAT": false,
+            "tsAutoPassRules": []
+          },
+          "serviceAutoPass": {
+            "passESs": true,
+            "passECMs": true,
+            "passES_ECMs": true
+          }
+        },
+        "vlan": {
+          "vlanId": null
+        },
+        "tsFEC": {
+          "triggerMode": "Disabled",
+          "sendingArrangement": "BlockAligned",
+          "columnFEC": {
+            "targetIp": null,
+            "targetUdp": null
+          },
+          "rowFEC": {
+            "targetIp": null,
+            "targetUdp": null
+          },
+          "D_ColDepth": 6,
+          "L_RowLength": 10
+        },
+        "rip": {
+          "enable": false,
+          "normalMetric": 1,
+          "alarmMetric": 16,
+          "routeTag": 0
+        },
+        "targetIpOverrule": null
+      },
+      "parts": {
+        "Pids": {
+          "raw": {
+            "emm_pids": [],
+            "unref_pids": [],
+            "custom_service_pids": [],
+            "services": [
+              {
+                "serviceUUID": "00010002-0000-0004-0000-000400000001",
+                "outputSID": 1,
+                "serviceName": "QVC HD",
+                "pmt": 99,
+                "pmtPid": {
+                  "pid": 99,
+                  "pidProperty": 1
+                },
+                "pcr": 1023,
+                "pcrPid": {
+                  "pid": 1023,
+                  "pidProperty": 1
+                },
+                "ecm": [],
+                "es": [
+                  {
+                    "pid": 35,
+                    "sourcePid": 35,
+                    "streamType": 6,
+                    "streamTypeDescr": "DVB_EBU_TXT",
+                    "language": [
+                      {
+                        "langCode": "deu",
+                        "audioType": 1
+                      }
+                    ],
+                    "pidProperty": 1,
+                    "ecm": []
+                  },
+                  {
+                    "pid": 1023,
+                    "sourcePid": 1023,
+                    "streamType": 27,
+                    "streamTypeDescr": "MPEG_H264_Video",
+                    "language": [],
+                    "pidProperty": 1,
+                    "ecm": []
+                  },
+                  {
+                    "pid": 1027,
+                    "sourcePid": 1027,
+                    "streamType": 6,
+                    "streamTypeDescr": "DVB_DolbyDigitalAudio",
+                    "language": [
+                      {
+                        "langCode": "deu",
+                        "audioType": 1
+                      }
+                    ],
+                    "pidProperty": 1,
+                    "ecm": []
+                  },
+                  {
+                    "pid": 1029,
+                    "sourcePid": 1029,
+                    "streamType": 5,
+                    "streamTypeDescr": "ApplicationInformationTable",
+                    "language": [],
+                    "pidProperty": 1,
+                    "ecm": []
+                  }
+                ]
+              }
+            ]
+          },
+          "method": "PUT",
+          "schema": {
+            "$ref": "#/definitions/OutputTsPids"
+          },
+          "config": {
+            "emm_pids": [],
+            "unref_pids": [],
+            "custom_service_pids": []
+          }
+        },
+        "SiComponents/AutoPassTables": {
+          "raw": {
+            "autoPassTables": []
+          },
+          "method": "PUT",
+          "schema": {
+            "$ref": "#/definitions/AutoPassTables"
+          },
+          "config": {
+            "autoPassTables": []
+          }
+        },
+        "SiComponents/CatSettings": {
+          "raw": {
+            "insertCaDescriptorsInImportedCAT": false
+          },
+          "method": "PUT",
+          "schema": {
+            "$ref": "#/definitions/CatSettings"
+          },
+          "config": {
+            "insertCaDescriptorsInImportedCAT": false
+          }
+        },
+        "SiComponents/PatSettings": {
+          "raw": {
+            "NITinPATMode": "Auto"
+          },
+          "method": "PUT",
+          "schema": {
+            "$ref": "#/definitions/PatSettings"
+          },
+          "config": {
+            "NITinPATMode": "Auto"
+          }
+        },
+        "SiComponents/SiTables": {
+          "raw": {
+            "siTables": [
+              {
+                "identification": {
+                  "tableId": 0,
+                  "tableName": "PAT",
+                  "sidExt": 1,
+                  "serviceName": null
+                },
+                "output": {
+                  "pidOverrule": false,
+                  "pidValue": null,
+                  "generationMode": "Generate"
+                },
+                "source": {
+                  "sourceId": null,
+                  "pid": null,
+                  "sidExt": null,
+                  "type": null,
+                  "TSID": null,
+                  "ONID": null
+                },
+                "proxy": {
+                  "proxyId": null,
+                  "proxyName": null
+                }
+              },
+              {
+                "identification": {
+                  "tableId": 1,
+                  "tableName": "CAT",
+                  "sidExt": null,
+                  "serviceName": null
+                },
+                "output": {
+                  "pidOverrule": false,
+                  "pidValue": null,
+                  "generationMode": "Generate"
+                },
+                "source": {
+                  "sourceId": null,
+                  "pid": null,
+                  "sidExt": null,
+                  "type": null,
+                  "TSID": null,
+                  "ONID": null
+                },
+                "proxy": {
+                  "proxyId": null,
+                  "proxyName": null
+                }
+              },
+              {
+                "identification": {
+                  "tableId": 64,
+                  "tableName": "NITa",
+                  "sidExt": 1,
+                  "serviceName": null
+                },
+                "output": {
+                  "pidOverrule": false,
+                  "pidValue": null,
+                  "generationMode": "Stop"
+                },
+                "source": {
+                  "sourceId": null,
+                  "pid": null,
+                  "sidExt": null,
+                  "type": null,
+                  "TSID": null,
+                  "ONID": null
+                },
+                "proxy": {
+                  "proxyId": null,
+                  "proxyName": null
+                }
+              },
+              {
+                "identification": {
+                  "tableId": 66,
+                  "tableName": "SDTa",
+                  "sidExt": 1,
+                  "serviceName": null
+                },
+                "output": {
+                  "pidOverrule": false,
+                  "pidValue": null,
+                  "generationMode": "Generate"
+                },
+                "source": {
+                  "sourceId": null,
+                  "pid": null,
+                  "sidExt": null,
+                  "type": null,
+                  "TSID": null,
+                  "ONID": null
+                },
+                "proxy": {
+                  "proxyId": null,
+                  "proxyName": null
+                }
+              },
+              {
+                "identification": {
+                  "tableId": 112,
+                  "tableName": "TDT",
+                  "sidExt": null,
+                  "serviceName": null
+                },
+                "output": {
+                  "pidOverrule": false,
+                  "pidValue": null,
+                  "generationMode": "Stop"
+                },
+                "source": {
+                  "sourceId": null,
+                  "pid": null,
+                  "sidExt": null,
+                  "type": null,
+                  "TSID": null,
+                  "ONID": null
+                },
+                "proxy": {
+                  "proxyId": null,
+                  "proxyName": null
+                }
+              },
+              {
+                "identification": {
+                  "tableId": 115,
+                  "tableName": "TOT",
+                  "sidExt": null,
+                  "serviceName": null
+                },
+                "output": {
+                  "pidOverrule": false,
+                  "pidValue": null,
+                  "generationMode": "Stop"
+                },
+                "source": {
+                  "sourceId": null,
+                  "pid": null,
+                  "sidExt": null,
+                  "type": null,
+                  "TSID": null,
+                  "ONID": null
+                },
+                "proxy": {
+                  "proxyId": null,
+                  "proxyName": null
+                }
+              },
+              {
+                "identification": {
+                  "tableId": 2,
+                  "tableName": "PMT",
+                  "sidExt": 1,
+                  "serviceName": "QVC HD"
+                },
+                "output": {
+                  "pidOverrule": false,
+                  "pidValue": null,
+                  "generationMode": "Generate"
+                },
+                "source": {
+                  "sourceId": null,
+                  "pid": null,
+                  "sidExt": null,
+                  "type": null,
+                  "TSID": null,
+                  "ONID": null
+                },
+                "proxy": {
+                  "proxyId": null,
+                  "proxyName": null
+                }
+              },
+              {
+                "identification": {
+                  "tableId": 78,
+                  "tableName": "EITa pf",
+                  "sidExt": 1,
+                  "serviceName": "QVC HD"
+                },
+                "output": {
+                  "pidOverrule": false,
+                  "pidValue": null,
+                  "generationMode": "Stop"
+                },
+                "source": {
+                  "sourceId": null,
+                  "pid": null,
+                  "sidExt": null,
+                  "type": null,
+                  "TSID": null,
+                  "ONID": null
+                },
+                "proxy": {
+                  "proxyId": null,
+                  "proxyName": null
+                }
+              },
+              {
+                "identification": {
+                  "tableId": 80,
+                  "tableName": "EITa sch first 8 days",
+                  "sidExt": 1,
+                  "serviceName": "QVC HD"
+                },
+                "output": {
+                  "pidOverrule": false,
+                  "pidValue": null,
+                  "generationMode": "Stop"
+                },
+                "source": {
+                  "sourceId": null,
+                  "pid": null,
+                  "sidExt": null,
+                  "type": null,
+                  "TSID": null,
+                  "ONID": null
+                },
+                "proxy": {
+                  "proxyId": null,
+                  "proxyName": null
+                }
+              },
+              {
+                "identification": {
+                  "tableId": 81,
+                  "tableName": "EITa sch",
+                  "sidExt": 1,
+                  "serviceName": "QVC HD"
+                },
+                "output": {
+                  "pidOverrule": false,
+                  "pidValue": null,
+                  "generationMode": "Stop"
+                },
+                "source": {
+                  "sourceId": null,
+                  "pid": null,
+                  "sidExt": null,
+                  "type": null,
+                  "TSID": null,
+                  "ONID": null
+                },
+                "proxy": {
+                  "proxyId": null,
+                  "proxyName": null
+                }
+              },
+              {
+                "identification": {
+                  "tableId": 82,
+                  "tableName": "EITa sch after 8 days",
+                  "sidExt": 1,
+                  "serviceName": "QVC HD"
+                },
+                "output": {
+                  "pidOverrule": false,
+                  "pidValue": null,
+                  "generationMode": "Stop"
+                },
+                "source": {
+                  "sourceId": null,
+                  "pid": null,
+                  "sidExt": null,
+                  "type": null,
+                  "TSID": null,
+                  "ONID": null
+                },
+                "proxy": {
+                  "proxyId": null,
+                  "proxyName": null
+                }
+              },
+              {
+                "identification": {
+                  "tableId": 83,
+                  "tableName": "EITa sch",
+                  "sidExt": 1,
+                  "serviceName": "QVC HD"
+                },
+                "output": {
+                  "pidOverrule": false,
+                  "pidValue": null,
+                  "generationMode": "Stop"
+                },
+                "source": {
+                  "sourceId": null,
+                  "pid": null,
+                  "sidExt": null,
+                  "type": null,
+                  "TSID": null,
+                  "ONID": null
+                },
+                "proxy": {
+                  "proxyId": null,
+                  "proxyName": null
+                }
+              },
+              {
+                "identification": {
+                  "tableId": 84,
+                  "tableName": "EITa sch",
+                  "sidExt": 1,
+                  "serviceName": "QVC HD"
+                },
+                "output": {
+                  "pidOverrule": false,
+                  "pidValue": null,
+                  "generationMode": "Stop"
+                },
+                "source": {
+                  "sourceId": null,
+                  "pid": null,
+                  "sidExt": null,
+                  "type": null,
+                  "TSID": null,
+                  "ONID": null
+                },
+                "proxy": {
+                  "proxyId": null,
+                  "proxyName": null
+                }
+              },
+              {
+                "identification": {
+                  "tableId": 85,
+                  "tableName": "EITa sch",
+                  "sidExt": 1,
+                  "serviceName": "QVC HD"
+                },
+                "output": {
+                  "pidOverrule": false,
+                  "pidValue": null,
+                  "generationMode": "Stop"
+                },
+                "source": {
+                  "sourceId": null,
+                  "pid": null,
+                  "sidExt": null,
+                  "type": null,
+                  "TSID": null,
+                  "ONID": null
+                },
+                "proxy": {
+                  "proxyId": null,
+                  "proxyName": null
+                }
+              },
+              {
+                "identification": {
+                  "tableId": 86,
+                  "tableName": "EITa sch",
+                  "sidExt": 1,
+                  "serviceName": "QVC HD"
+                },
+                "output": {
+                  "pidOverrule": false,
+                  "pidValue": null,
+                  "generationMode": "Stop"
+                },
+                "source": {
+                  "sourceId": null,
+                  "pid": null,
+                  "sidExt": null,
+                  "type": null,
+                  "TSID": null,
+                  "ONID": null
+                },
+                "proxy": {
+                  "proxyId": null,
+                  "proxyName": null
+                }
+              },
+              {
+                "identification": {
+                  "tableId": 87,
+                  "tableName": "EITa sch",
+                  "sidExt": 1,
+                  "serviceName": "QVC HD"
+                },
+                "output": {
+                  "pidOverrule": false,
+                  "pidValue": null,
+                  "generationMode": "Stop"
+                },
+                "source": {
+                  "sourceId": null,
+                  "pid": null,
+                  "sidExt": null,
+                  "type": null,
+                  "TSID": null,
+                  "ONID": null
+                },
+                "proxy": {
+                  "proxyId": null,
+                  "proxyName": null
+                }
+              },
+              {
+                "identification": {
+                  "tableId": 88,
+                  "tableName": "EITa sch",
+                  "sidExt": 1,
+                  "serviceName": "QVC HD"
+                },
+                "output": {
+                  "pidOverrule": false,
+                  "pidValue": null,
+                  "generationMode": "Stop"
+                },
+                "source": {
+                  "sourceId": null,
+                  "pid": null,
+                  "sidExt": null,
+                  "type": null,
+                  "TSID": null,
+                  "ONID": null
+                },
+                "proxy": {
+                  "proxyId": null,
+                  "proxyName": null
+                }
+              },
+              {
+                "identification": {
+                  "tableId": 89,
+                  "tableName": "EITa sch",
+                  "sidExt": 1,
+                  "serviceName": "QVC HD"
+                },
+                "output": {
+                  "pidOverrule": false,
+                  "pidValue": null,
+                  "generationMode": "Stop"
+                },
+                "source": {
+                  "sourceId": null,
+                  "pid": null,
+                  "sidExt": null,
+                  "type": null,
+                  "TSID": null,
+                  "ONID": null
+                },
+                "proxy": {
+                  "proxyId": null,
+                  "proxyName": null
+                }
+              },
+              {
+                "identification": {
+                  "tableId": 90,
+                  "tableName": "EITa sch",
+                  "sidExt": 1,
+                  "serviceName": "QVC HD"
+                },
+                "output": {
+                  "pidOverrule": false,
+                  "pidValue": null,
+                  "generationMode": "Stop"
+                },
+                "source": {
+                  "sourceId": null,
+                  "pid": null,
+                  "sidExt": null,
+                  "type": null,
+                  "TSID": null,
+                  "ONID": null
+                },
+                "proxy": {
+                  "proxyId": null,
+                  "proxyName": null
+                }
+              },
+              {
+                "identification": {
+                  "tableId": 91,
+                  "tableName": "EITa sch",
+                  "sidExt": 1,
+                  "serviceName": "QVC HD"
+                },
+                "output": {
+                  "pidOverrule": false,
+                  "pidValue": null,
+                  "generationMode": "Stop"
+                },
+                "source": {
+                  "sourceId": null,
+                  "pid": null,
+                  "sidExt": null,
+                  "type": null,
+                  "TSID": null,
+                  "ONID": null
+                },
+                "proxy": {
+                  "proxyId": null,
+                  "proxyName": null
+                }
+              },
+              {
+                "identification": {
+                  "tableId": 92,
+                  "tableName": "EITa sch",
+                  "sidExt": 1,
+                  "serviceName": "QVC HD"
+                },
+                "output": {
+                  "pidOverrule": false,
+                  "pidValue": null,
+                  "generationMode": "Stop"
+                },
+                "source": {
+                  "sourceId": null,
+                  "pid": null,
+                  "sidExt": null,
+                  "type": null,
+                  "TSID": null,
+                  "ONID": null
+                },
+                "proxy": {
+                  "proxyId": null,
+                  "proxyName": null
+                }
+              },
+              {
+                "identification": {
+                  "tableId": 93,
+                  "tableName": "EITa sch",
+                  "sidExt": 1,
+                  "serviceName": "QVC HD"
+                },
+                "output": {
+                  "pidOverrule": false,
+                  "pidValue": null,
+                  "generationMode": "Stop"
+                },
+                "source": {
+                  "sourceId": null,
+                  "pid": null,
+                  "sidExt": null,
+                  "type": null,
+                  "TSID": null,
+                  "ONID": null
+                },
+                "proxy": {
+                  "proxyId": null,
+                  "proxyName": null
+                }
+              },
+              {
+                "identification": {
+                  "tableId": 94,
+                  "tableName": "EITa sch",
+                  "sidExt": 1,
+                  "serviceName": "QVC HD"
+                },
+                "output": {
+                  "pidOverrule": false,
+                  "pidValue": null,
+                  "generationMode": "Stop"
+                },
+                "source": {
+                  "sourceId": null,
+                  "pid": null,
+                  "sidExt": null,
+                  "type": null,
+                  "TSID": null,
+                  "ONID": null
+                },
+                "proxy": {
+                  "proxyId": null,
+                  "proxyName": null
+                }
+              },
+              {
+                "identification": {
+                  "tableId": 95,
+                  "tableName": "EITa sch",
+                  "sidExt": 1,
+                  "serviceName": "QVC HD"
+                },
+                "output": {
+                  "pidOverrule": false,
+                  "pidValue": null,
+                  "generationMode": "Stop"
+                },
+                "source": {
+                  "sourceId": null,
+                  "pid": null,
+                  "sidExt": null,
+                  "type": null,
+                  "TSID": null,
+                  "ONID": null
+                },
+                "proxy": {
+                  "proxyId": null,
+                  "proxyName": null
+                }
+              }
+            ],
+            "psipPidSettings": {
+              "EIT_StartPid": null,
+              "ETT_StartPid": null,
+              "ETT_V_Pid": null
+            },
+            "atscSettings": {
+              "psipGeneration": [],
+              "currentPidUsage": [],
+              "sttSettings": {
+                "timezone": null
+              },
+              "vctSettings": {
+                "cvctSettings": {
+                  "AddServiceLocDescriptor": null
+                },
+                "tvctSettings": {
+                  "AddServiceLocDescriptor": null
+                }
+              },
+              "triveniGuideBuilder": {
+                "enable": null,
+                "tcpPort": null,
+                "doNotModify": null
+              }
+            }
+          },
+          "method": "PUT",
+          "schema": {
+            "$ref": "#/definitions/SiTables"
+          },
+          "config": {
+            "siTables": [
+              {
+                "identification": {
+                  "tableId": 0,
+                  "sidExt": 1
+                },
+                "output": {
+                  "pidOverrule": false,
+                  "generationMode": "Generate"
+                },
+                "source": {},
+                "proxy": {}
+              },
+              {
+                "identification": {
+                  "tableId": 1
+                },
+                "output": {
+                  "pidOverrule": false,
+                  "generationMode": "Generate"
+                },
+                "source": {},
+                "proxy": {}
+              },
+              {
+                "identification": {
+                  "tableId": 64,
+                  "sidExt": 1
+                },
+                "output": {
+                  "pidOverrule": false,
+                  "generationMode": "Stop"
+                },
+                "source": {},
+                "proxy": {}
+              },
+              {
+                "identification": {
+                  "tableId": 66,
+                  "sidExt": 1
+                },
+                "output": {
+                  "pidOverrule": false,
+                  "generationMode": "Generate"
+                },
+                "source": {},
+                "proxy": {}
+              },
+              {
+                "identification": {
+                  "tableId": 112
+                },
+                "output": {
+                  "pidOverrule": false,
+                  "generationMode": "Stop"
+                },
+                "source": {},
+                "proxy": {}
+              },
+              {
+                "identification": {
+                  "tableId": 115
+                },
+                "output": {
+                  "pidOverrule": false,
+                  "generationMode": "Stop"
+                },
+                "source": {},
+                "proxy": {}
+              },
+              {
+                "identification": {
+                  "tableId": 2,
+                  "sidExt": 1
+                },
+                "output": {
+                  "pidOverrule": false,
+                  "generationMode": "Generate"
+                },
+                "source": {},
+                "proxy": {}
+              },
+              {
+                "identification": {
+                  "tableId": 78,
+                  "sidExt": 1
+                },
+                "output": {
+                  "pidOverrule": false,
+                  "generationMode": "Stop"
+                },
+                "source": {},
+                "proxy": {}
+              },
+              {
+                "identification": {
+                  "tableId": 80,
+                  "sidExt": 1
+                },
+                "output": {
+                  "pidOverrule": false,
+                  "generationMode": "Stop"
+                },
+                "source": {},
+                "proxy": {}
+              },
+              {
+                "identification": {
+                  "tableId": 81,
+                  "sidExt": 1
+                },
+                "output": {
+                  "pidOverrule": false,
+                  "generationMode": "Stop"
+                },
+                "source": {},
+                "proxy": {}
+              },
+              {
+                "identification": {
+                  "tableId": 82,
+                  "sidExt": 1
+                },
+                "output": {
+                  "pidOverrule": false,
+                  "generationMode": "Stop"
+                },
+                "source": {},
+                "proxy": {}
+              },
+              {
+                "identification": {
+                  "tableId": 83,
+                  "sidExt": 1
+                },
+                "output": {
+                  "pidOverrule": false,
+                  "generationMode": "Stop"
+                },
+                "source": {},
+                "proxy": {}
+              },
+              {
+                "identification": {
+                  "tableId": 84,
+                  "sidExt": 1
+                },
+                "output": {
+                  "pidOverrule": false,
+                  "generationMode": "Stop"
+                },
+                "source": {},
+                "proxy": {}
+              },
+              {
+                "identification": {
+                  "tableId": 85,
+                  "sidExt": 1
+                },
+                "output": {
+                  "pidOverrule": false,
+                  "generationMode": "Stop"
+                },
+                "source": {},
+                "proxy": {}
+              },
+              {
+                "identification": {
+                  "tableId": 86,
+                  "sidExt": 1
+                },
+                "output": {
+                  "pidOverrule": false,
+                  "generationMode": "Stop"
+                },
+                "source": {},
+                "proxy": {}
+              },
+              {
+                "identification": {
+                  "tableId": 87,
+                  "sidExt": 1
+                },
+                "output": {
+                  "pidOverrule": false,
+                  "generationMode": "Stop"
+                },
+                "source": {},
+                "proxy": {}
+              },
+              {
+                "identification": {
+                  "tableId": 88,
+                  "sidExt": 1
+                },
+                "output": {
+                  "pidOverrule": false,
+                  "generationMode": "Stop"
+                },
+                "source": {},
+                "proxy": {}
+              },
+              {
+                "identification": {
+                  "tableId": 89,
+                  "sidExt": 1
+                },
+                "output": {
+                  "pidOverrule": false,
+                  "generationMode": "Stop"
+                },
+                "source": {},
+                "proxy": {}
+              },
+              {
+                "identification": {
+                  "tableId": 90,
+                  "sidExt": 1
+                },
+                "output": {
+                  "pidOverrule": false,
+                  "generationMode": "Stop"
+                },
+                "source": {},
+                "proxy": {}
+              },
+              {
+                "identification": {
+                  "tableId": 91,
+                  "sidExt": 1
+                },
+                "output": {
+                  "pidOverrule": false,
+                  "generationMode": "Stop"
+                },
+                "source": {},
+                "proxy": {}
+              },
+              {
+                "identification": {
+                  "tableId": 92,
+                  "sidExt": 1
+                },
+                "output": {
+                  "pidOverrule": false,
+                  "generationMode": "Stop"
+                },
+                "source": {},
+                "proxy": {}
+              },
+              {
+                "identification": {
+                  "tableId": 93,
+                  "sidExt": 1
+                },
+                "output": {
+                  "pidOverrule": false,
+                  "generationMode": "Stop"
+                },
+                "source": {},
+                "proxy": {}
+              },
+              {
+                "identification": {
+                  "tableId": 94,
+                  "sidExt": 1
+                },
+                "output": {
+                  "pidOverrule": false,
+                  "generationMode": "Stop"
+                },
+                "source": {},
+                "proxy": {}
+              },
+              {
+                "identification": {
+                  "tableId": 95,
+                  "sidExt": 1
+                },
+                "output": {
+                  "pidOverrule": false,
+                  "generationMode": "Stop"
+                },
+                "source": {},
+                "proxy": {}
+              }
+            ],
+            "psipPidSettings": {},
+            "atscSettings": {
+              "psipGeneration": [],
+              "sttSettings": {},
+              "vctSettings": {
+                "cvctSettings": {},
+                "tvctSettings": {}
+              },
+              "triveniGuideBuilder": {}
+            }
+          }
+        },
+        "SiComponents/TablePlayout": {
+          "raw": {
+            "tablePlayout": [
+              {
+                "tableName": "PAT",
+                "standard": "MPEG2",
+                "tableId": 0,
+                "tableType": 65535,
+                "interval": 500
+              },
+              {
+                "tableName": "CAT",
+                "standard": "MPEG2",
+                "tableId": 1,
+                "tableType": 65535,
+                "interval": 500
+              },
+              {
+                "tableName": "PMT",
+                "standard": "MPEG2",
+                "tableId": 2,
+                "tableType": 65535,
+                "interval": 500
+              },
+              {
+                "tableName": "NITa",
+                "standard": "DVB",
+                "tableId": 64,
+                "tableType": 65535,
+                "interval": 10000
+              },
+              {
+                "tableName": "NITo",
+                "standard": "DVB",
+                "tableId": 65,
+                "tableType": 65535,
+                "interval": 10000
+              },
+              {
+                "tableName": "SDTa",
+                "standard": "DVB",
+                "tableId": 66,
+                "tableType": 65535,
+                "interval": 2000
+              },
+              {
+                "tableName": "SDTo",
+                "standard": "DVB",
+                "tableId": 70,
+                "tableType": 65535,
+                "interval": 10000
+              },
+              {
+                "tableName": "BAT",
+                "standard": "DVB",
+                "tableId": 74,
+                "tableType": 65535,
+                "interval": 10000
+              },
+              {
+                "tableName": "EITa p/f",
+                "standard": "DVB",
+                "tableId": 78,
+                "tableType": 65535,
+                "interval": 2000
+              },
+              {
+                "tableName": "EITo p/f",
+                "standard": "DVB",
+                "tableId": 79,
+                "tableType": 65535,
+                "interval": 10000
+              },
+              {
+                "tableName": "EITa sch",
+                "standard": "DVB",
+                "tableId": 80,
+                "tableType": 65535,
+                "interval": 10000
+              },
+              {
+                "tableName": "EITa sch",
+                "standard": "DVB",
+                "tableId": 81,
+                "tableType": 65535,
+                "interval": 10000
+              },
+              {
+                "tableName": "EITa sch",
+                "standard": "DVB",
+                "tableId": 82,
+                "tableType": 65535,
+                "interval": 30000
+              },
+              {
+                "tableName": "EITa sch",
+                "standard": "DVB",
+                "tableId": 83,
+                "tableType": 65535,
+                "interval": 30000
+              },
+              {
+                "tableName": "EITa sch",
+                "standard": "DVB",
+                "tableId": 84,
+                "tableType": 65535,
+                "interval": 30000
+              },
+              {
+                "tableName": "EITa sch",
+                "standard": "DVB",
+                "tableId": 85,
+                "tableType": 65535,
+                "interval": 30000
+              },
+              {
+                "tableName": "EITa sch",
+                "standard": "DVB",
+                "tableId": 86,
+                "tableType": 65535,
+                "interval": 30000
+              },
+              {
+                "tableName": "EITa sch",
+                "standard": "DVB",
+                "tableId": 87,
+                "tableType": 65535,
+                "interval": 30000
+              },
+              {
+                "tableName": "EITa sch",
+                "standard": "DVB",
+                "tableId": 88,
+                "tableType": 65535,
+                "interval": 30000
+              },
+              {
+                "tableName": "EITa sch",
+                "standard": "DVB",
+                "tableId": 89,
+                "tableType": 65535,
+                "interval": 30000
+              },
+              {
+                "tableName": "EITa sch",
+                "standard": "DVB",
+                "tableId": 90,
+                "tableType": 65535,
+                "interval": 30000
+              },
+              {
+                "tableName": "EITa sch",
+                "standard": "DVB",
+                "tableId": 91,
+                "tableType": 65535,
+                "interval": 30000
+              },
+              {
+                "tableName": "EITa sch",
+                "standard": "DVB",
+                "tableId": 92,
+                "tableType": 65535,
+                "interval": 30000
+              },
+              {
+                "tableName": "EITa sch",
+                "standard": "DVB",
+                "tableId": 93,
+                "tableType": 65535,
+                "interval": 30000
+              },
+              {
+                "tableName": "EITa sch",
+                "standard": "DVB",
+                "tableId": 94,
+                "tableType": 65535,
+                "interval": 30000
+              },
+              {
+                "tableName": "EITa sch",
+                "standard": "DVB",
+                "tableId": 95,
+                "tableType": 65535,
+                "interval": 30000
+              },
+              {
+                "tableName": "EITo sch",
+                "standard": "DVB",
+                "tableId": 96,
+                "tableType": 65535,
+                "interval": 30000
+              },
+              {
+                "tableName": "EITo sch",
+                "standard": "DVB",
+                "tableId": 97,
+                "tableType": 65535,
+                "interval": 30000
+              },
+              {
+                "tableName": "EITo sch",
+                "standard": "DVB",
+                "tableId": 98,
+                "tableType": 65535,
+                "interval": 30000
+              },
+              {
+                "tableName": "EITo sch",
+                "standard": "DVB",
+                "tableId": 99,
+                "tableType": 65535,
+                "interval": 30000
+              },
+              {
+                "tableName": "EITo sch",
+                "standard": "DVB",
+                "tableId": 100,
+                "tableType": 65535,
+                "interval": 30000
+              },
+              {
+                "tableName": "EITo sch",
+                "standard": "DVB",
+                "tableId": 101,
+                "tableType": 65535,
+                "interval": 30000
+              },
+              {
+                "tableName": "EITo sch",
+                "standard": "DVB",
+                "tableId": 102,
+                "tableType": 65535,
+                "interval": 30000
+              },
+              {
+                "tableName": "EITo sch",
+                "standard": "DVB",
+                "tableId": 103,
+                "tableType": 65535,
+                "interval": 30000
+              },
+              {
+                "tableName": "EITo sch",
+                "standard": "DVB",
+                "tableId": 104,
+                "tableType": 65535,
+                "interval": 30000
+              },
+              {
+                "tableName": "EITo sch",
+                "standard": "DVB",
+                "tableId": 105,
+                "tableType": 65535,
+                "interval": 30000
+              },
+              {
+                "tableName": "EITo sch",
+                "standard": "DVB",
+                "tableId": 106,
+                "tableType": 65535,
+                "interval": 30000
+              },
+              {
+                "tableName": "EITo sch",
+                "standard": "DVB",
+                "tableId": 107,
+                "tableType": 65535,
+                "interval": 30000
+              },
+              {
+                "tableName": "EITo sch",
+                "standard": "DVB",
+                "tableId": 108,
+                "tableType": 65535,
+                "interval": 30000
+              },
+              {
+                "tableName": "EITo sch",
+                "standard": "DVB",
+                "tableId": 109,
+                "tableType": 65535,
+                "interval": 30000
+              },
+              {
+                "tableName": "EITo sch",
+                "standard": "DVB",
+                "tableId": 110,
+                "tableType": 65535,
+                "interval": 30000
+              },
+              {
+                "tableName": "EITo sch",
+                "standard": "DVB",
+                "tableId": 111,
+                "tableType": 65535,
+                "interval": 30000
+              },
+              {
+                "tableName": "TDT",
+                "standard": "DVB",
+                "tableId": 112,
+                "tableType": 65535,
+                "interval": 30000
+              },
+              {
+                "tableName": "TOT",
+                "standard": "DVB",
+                "tableId": 115,
+                "tableType": 65535,
+                "interval": 30000
+              },
+              {
+                "tableName": "AIT",
+                "standard": "DVB",
+                "tableId": 116,
+                "tableType": 65535,
+                "interval": 30000
+              },
+              {
+                "tableName": "MOT PIM",
+                "standard": "MPEG2",
+                "tableId": 192,
+                "tableType": 65535,
+                "interval": 175
+              },
+              {
+                "tableName": "MOT PNM",
+                "standard": "MPEG2",
+                "tableId": 193,
+                "tableType": 65535,
+                "interval": 250
+              }
+            ]
+          },
+          "method": "PATCH",
+          "schema": {
+            "$ref": "#/definitions/TablePlayout"
+          },
+          "config": {
+            "tablePlayout": [
+              {
+                "tableId": 0,
+                "tableType": 65535,
+                "interval": 500
+              },
+              {
+                "tableId": 1,
+                "tableType": 65535,
+                "interval": 500
+              },
+              {
+                "tableId": 2,
+                "tableType": 65535,
+                "interval": 500
+              },
+              {
+                "tableId": 64,
+                "tableType": 65535,
+                "interval": 10000
+              },
+              {
+                "tableId": 65,
+                "tableType": 65535,
+                "interval": 10000
+              },
+              {
+                "tableId": 66,
+                "tableType": 65535,
+                "interval": 2000
+              },
+              {
+                "tableId": 70,
+                "tableType": 65535,
+                "interval": 10000
+              },
+              {
+                "tableId": 74,
+                "tableType": 65535,
+                "interval": 10000
+              },
+              {
+                "tableId": 78,
+                "tableType": 65535,
+                "interval": 2000
+              },
+              {
+                "tableId": 79,
+                "tableType": 65535,
+                "interval": 10000
+              },
+              {
+                "tableId": 80,
+                "tableType": 65535,
+                "interval": 10000
+              },
+              {
+                "tableId": 81,
+                "tableType": 65535,
+                "interval": 10000
+              },
+              {
+                "tableId": 82,
+                "tableType": 65535,
+                "interval": 30000
+              },
+              {
+                "tableId": 83,
+                "tableType": 65535,
+                "interval": 30000
+              },
+              {
+                "tableId": 84,
+                "tableType": 65535,
+                "interval": 30000
+              },
+              {
+                "tableId": 85,
+                "tableType": 65535,
+                "interval": 30000
+              },
+              {
+                "tableId": 86,
+                "tableType": 65535,
+                "interval": 30000
+              },
+              {
+                "tableId": 87,
+                "tableType": 65535,
+                "interval": 30000
+              },
+              {
+                "tableId": 88,
+                "tableType": 65535,
+                "interval": 30000
+              },
+              {
+                "tableId": 89,
+                "tableType": 65535,
+                "interval": 30000
+              },
+              {
+                "tableId": 90,
+                "tableType": 65535,
+                "interval": 30000
+              },
+              {
+                "tableId": 91,
+                "tableType": 65535,
+                "interval": 30000
+              },
+              {
+                "tableId": 92,
+                "tableType": 65535,
+                "interval": 30000
+              },
+              {
+                "tableId": 93,
+                "tableType": 65535,
+                "interval": 30000
+              },
+              {
+                "tableId": 94,
+                "tableType": 65535,
+                "interval": 30000
+              },
+              {
+                "tableId": 95,
+                "tableType": 65535,
+                "interval": 30000
+              },
+              {
+                "tableId": 96,
+                "tableType": 65535,
+                "interval": 30000
+              },
+              {
+                "tableId": 97,
+                "tableType": 65535,
+                "interval": 30000
+              },
+              {
+                "tableId": 98,
+                "tableType": 65535,
+                "interval": 30000
+              },
+              {
+                "tableId": 99,
+                "tableType": 65535,
+                "interval": 30000
+              },
+              {
+                "tableId": 100,
+                "tableType": 65535,
+                "interval": 30000
+              },
+              {
+                "tableId": 101,
+                "tableType": 65535,
+                "interval": 30000
+              },
+              {
+                "tableId": 102,
+                "tableType": 65535,
+                "interval": 30000
+              },
+              {
+                "tableId": 103,
+                "tableType": 65535,
+                "interval": 30000
+              },
+              {
+                "tableId": 104,
+                "tableType": 65535,
+                "interval": 30000
+              },
+              {
+                "tableId": 105,
+                "tableType": 65535,
+                "interval": 30000
+              },
+              {
+                "tableId": 106,
+                "tableType": 65535,
+                "interval": 30000
+              },
+              {
+                "tableId": 107,
+                "tableType": 65535,
+                "interval": 30000
+              },
+              {
+                "tableId": 108,
+                "tableType": 65535,
+                "interval": 30000
+              },
+              {
+                "tableId": 109,
+                "tableType": 65535,
+                "interval": 30000
+              },
+              {
+                "tableId": 110,
+                "tableType": 65535,
+                "interval": 30000
+              },
+              {
+                "tableId": 111,
+                "tableType": 65535,
+                "interval": 30000
+              },
+              {
+                "tableId": 112,
+                "tableType": 65535,
+                "interval": 30000
+              },
+              {
+                "tableId": 115,
+                "tableType": 65535,
+                "interval": 30000
+              },
+              {
+                "tableId": 116,
+                "tableType": 65535,
+                "interval": 30000
+              },
+              {
+                "tableId": 192,
+                "tableType": 65535,
+                "interval": 175
+              },
+              {
+                "tableId": 193,
+                "tableType": 65535,
+                "interval": 250
+              }
+            ]
+          }
+        },
+        "SiComponents/TotSettings": {
+          "raw": {
+            "TOT_Descriptors": []
+          },
+          "method": "PUT",
+          "schema": {
+            "$ref": "#/definitions/TotSettings"
+          },
+          "config": {
+            "TOT_Descriptors": []
+          }
+        }
+      },
+      "collections": {
+        "RealignmentMux": [],
+        "SiComponents/OtherTables": []
+      },
+      "services": [
+        {
+          "output": {
+            "id": "00010002-0000-0004-0000-000400000001",
+            "url": "https://10.90.245.127:8443/api/v2/OutputServices/00010002-0000-0004-0000-000400000001",
+            "sw_ref": "1-2-4-1-",
+            "outputTS": {
+              "id": "00010002-0000-0004-0000-000000000001",
+              "url": "https://10.90.245.127:8443/api/v2/OutputTSs/00010002-0000-0004-0000-000000000001",
+              "sw_ref": "1-2-4--",
+              "outputType": "XGRESS",
+              "interface": "Data2",
+              "targetIp": "235.1.1.3",
+              "targetUdp": 50000,
+              "vlan": {
+                "vlanId": null
+              }
+            },
+            "externalIdentifier": "",
+            "name": "QVC HD",
+            "forceName": false,
+            "forceSID": false,
+            "sid": 1,
+            "streaming": "On",
+            "pids": [],
+            "alternatePCR": {
+              "enable": false,
+              "noInput": null,
+              "sourceId": null,
+              "sourceUrl": null,
+              "pcrPid": null
+            },
+            "scrambling": {
+              "mode": "Disabled",
+              "scrambleOnlyAV": false,
+              "blockCaInfo": false,
+              "sessionWordConfigured": false,
+              "powerKeySession": {
+                "sessionID": null,
+                "isEncrypted": null,
+                "ecmDelivered": null,
+                "iskAvailable": null,
+                "pkEcmAvailable": null,
+                "scpEcmAvailable": null
+              },
+              "entitlementSessionId": 65535
+            },
+            "serviceBackup": {
+              "serviceBackupMode": "NonRevertive",
+              "delayMainToBackup": 0,
+              "delayBackupToMain": 10
+            },
+            "forceOutputSI": false
+          },
+          "routing": {
+            "id": "00010002-0000-0004-0000-000400000001",
+            "url": "https://10.90.245.127:8443/api/v3/OutputServiceRoutings/00010002-0000-0004-0000-000400000001",
+            "inputService": {
+              "id": "00010002-0000-0002-0000-000100000001",
+              "url": "https://10.90.245.127:8443/api/v2/InputServices/00010002-0000-0002-0000-000100000001",
+              "sw_ref": "1-2-2-1-",
+              "source": {
+                "id": "00010002-0000-0002-0000-000000000001",
+                "url": "https://10.90.245.127:8443/api/v2/Sources/00010002-0000-0002-0000-000000000001",
+                "sw_ref": "1-2-2--",
+                "inputType": "XGRESS",
+                "xgressSettings": {
+                  "interface": "Data2",
+                  "vlanId": 0,
+                  "sourceIp": "192.168.111.53",
+                  "targetIp": "233.32.1.12",
+                  "targetUdp": 50000,
+                  "tsStandard": "DVB"
+                }
+              },
+              "inputType": "XGRESS",
+              "xgressSettings": {
+                "serviceId": 1,
+                "serviceUserName": "QVC HD"
+              }
+            },
+            "descrambledService": {
+              "descrambledServiceId": null,
+              "descrambledServiceUrl": null
+            },
+            "processedService": {
+              "sourceId": null,
+              "sourceUrl": null
+            },
+            "outputService": {
+              "id": "00010002-0000-0004-0000-000400000001",
+              "url": "https://10.90.245.127:8443/api/v2/OutputServices/00010002-0000-0004-0000-000400000001",
+              "sw_ref": "1-2-4-1-",
+              "outputTS": {
+                "id": "00010002-0000-0004-0000-000000000001",
+                "url": "https://10.90.245.127:8443/api/v2/OutputTSs/00010002-0000-0004-0000-000000000001",
+                "sw_ref": "1-2-4--",
+                "outputType": "XGRESS",
+                "interface": "Data2",
+                "targetIp": "235.1.1.3",
+                "targetUdp": 50000,
+                "vlan": {
+                  "vlanId": null
+                }
+              },
+              "externalIdentifier": "",
+              "name": "QVC HD",
+              "sid": 1
+            }
+          },
+          "parts": {
+            "Alternates": {
+              "raw": {
+                "alternateSources": [
+                  {
+                    "sourceServiceId": "00010002-0000-0002-0000-000100000001",
+                    "sourceServiceUrl": "https://10.90.245.127:8443/api/v2/InputServices/00010002-0000-0002-0000-000100000001",
+                    "alternateSourceId": 0,
+                    "activeState": "Active",
+                    "alternateSourceName": "Alt 0",
+                    "backupServices": [],
+                    "mergedServices": [],
+                    "mergedComponents": []
+                  }
+                ]
+              },
+              "method": "PUT",
+              "schema": {
+                "$ref": "#/definitions/AlternatesOutputServices"
+              },
+              "config": {
+                "alternateSources": [
+                  {
+                    "sourceServiceId": "00010002-0000-0002-0000-000100000001",
+                    "alternateSourceId": 0,
+                    "alternateSourceName": "Alt 0",
+                    "backupServices": [],
+                    "mergedServices": [],
+                    "mergedComponents": []
+                  }
+                ]
+              }
+            },
+            "Components": {
+              "raw": {
+                "trackRules": []
+              },
+              "method": "PUT",
+              "schema": {
+                "$ref": "#/definitions/OutputServiceComponents"
+              },
+              "config": {
+                "trackRules": []
+              }
+            },
+            "Processing": {
+              "raw": {
+                "lss": {
+                  "mode": "Disabled",
+                  "acquisitionPointId": "QVC HD",
+                  "zoneId": "",
+                  "poisBaseUrl": "",
+                  "poisSecondaryUrl": "",
+                  "signalProcessingEventPath": "",
+                  "signalStateRequestPath": "",
+                  "processStatusNotificationPath": ""
+                },
+                "blackOutMsg": {
+                  "cueCommand": [
+                    "TimeSignal"
+                  ],
+                  "segmentationType": [
+                    16,
+                    17,
+                    19,
+                    20
+                  ],
+                  "callOutMode": "BlackoutOnlyOnMain",
+                  "calloutForOutOfBandCue": false
+                },
+                "dpi": {
+                  "outputSpliceName": null,
+                  "mode": "Disabled",
+                  "paused": null,
+                  "adInsertion": {
+                    "options": {
+                      "clearPidBitrates": null,
+                      "addUnsplicedInsertionPids": null,
+                      "statmuxedService": null,
+                      "minimizeBlackFrames": null,
+                      "repeatFramestoCloseGop": null,
+                      "scte35Type6to5Conversion": {
+                        "mode": null,
+                        "segTypeIdList": []
+                      },
+                      "spliceOnEbpOnly": null,
+                      "scte35PidFilter": []
+                    }
+                  },
+                  "nextGenAdInsertion": {
+                    "options": {
+                      "clearPidBitrates": null,
+                      "minimizeBlackFrames": null,
+                      "repeatFramestoCloseGop": null,
+                      "spliceOnEbpOnly": null,
+                      "scte35PidFilter": []
+                    },
+                    "server": {
+                      "pcsEnabled": null,
+                      "sourceId": null,
+                      "zoneId": null,
+                      "sysCode": null,
+                      "sysCodeStr": null,
+                      "caId": null,
+                      "pcsUrl": null,
+                      "adsUrlTemplate": null,
+                      "adsSettings": []
+                    },
+                    "NGIAdPrefetchAndTranscode": {
+                      "mode": null
+                    }
+                  },
+                  "lpi": {
+                    "options": {
+                      "customPidMapping": null,
+                      "switchBackOnVideoLoss": null,
+                      "clearPidBitrates": null,
+                      "statmuxedService": null,
+                      "minimizeBlackFrames": null,
+                      "pmtMode": null,
+                      "repeatFramestoCloseGop": null,
+                      "spliceOnEbpOnly": null,
+                      "scte35PidFilter": []
+                    },
+                    "pids": [],
+                    "triggers": [],
+                    "insertionChannel": null
+                  },
+                  "seamlessAlternates": {
+                    "options": {
+                      "spliceOnEbpOnly": null,
+                      "minimizeBlackFrames": null
+                    }
+                  }
+                },
+                "pidSyncDelay": [],
+                "scte35SplitFilter": {
+                  "blockOriginalScte35": true,
+                  "splitFilters": []
+                },
+                "scte35Settings": {
+                  "tierSettings": {
+                    "enabled": false,
+                    "segmentationTiers": [],
+                    "defaultTiers": [],
+                    "providerTiers": []
+                  }
+                }
+              },
+              "method": "PUT",
+              "schema": {
+                "$ref": "#/definitions/ProcessingOutputServices"
+              },
+              "config": {
+                "lss": {
+                  "mode": "Disabled",
+                  "acquisitionPointId": "QVC HD",
+                  "zoneId": "",
+                  "poisBaseUrl": "",
+                  "poisSecondaryUrl": "",
+                  "signalProcessingEventPath": "",
+                  "signalStateRequestPath": "",
+                  "processStatusNotificationPath": ""
+                },
+                "blackOutMsg": {
+                  "cueCommand": [
+                    "TimeSignal"
+                  ],
+                  "segmentationType": [
+                    16,
+                    17,
+                    19,
+                    20
+                  ],
+                  "callOutMode": "BlackoutOnlyOnMain",
+                  "calloutForOutOfBandCue": false
+                },
+                "dpi": {
+                  "mode": "Disabled",
+                  "adInsertion": {
+                    "options": {
+                      "scte35Type6to5Conversion": {
+                        "segTypeIdList": []
+                      },
+                      "scte35PidFilter": []
+                    }
+                  },
+                  "nextGenAdInsertion": {
+                    "options": {
+                      "scte35PidFilter": []
+                    },
+                    "server": {
+                      "adsSettings": []
+                    },
+                    "NGIAdPrefetchAndTranscode": {}
+                  },
+                  "lpi": {
+                    "options": {
+                      "scte35PidFilter": []
+                    },
+                    "pids": [],
+                    "triggers": []
+                  },
+                  "seamlessAlternates": {
+                    "options": {}
+                  }
+                },
+                "pidSyncDelay": [],
+                "scte35SplitFilter": {
+                  "blockOriginalScte35": true,
+                  "splitFilters": []
+                },
+                "scte35Settings": {
+                  "tierSettings": {
+                    "enabled": false,
+                    "segmentationTiers": [],
+                    "defaultTiers": [],
+                    "providerTiers": []
+                  }
+                }
+              }
+            },
+            "SiComponents": {
+              "raw": {
+                "sdtSettings": {
+                  "presence": "FollowInputPresence",
+                  "serviceType": "Transparent",
+                  "customServiceType": null,
+                  "EIT_ScheduleFlag": "Transparent",
+                  "EIT_PresentFollowing": "Transparent",
+                  "runningStatus": "Transparent",
+                  "freeCA_Mode": "Transparent",
+                  "forceServiceProviderName": false,
+                  "serviceProviderName": null,
+                  "HEVC_Details": {
+                    "hevcComponentType": null,
+                    "hevcComponentTag": null,
+                    "hevcLanguage": null
+                  }
+                },
+                "pmtSettings": {
+                  "esTypeOverrules": [],
+                  "pmtDescriptors": [
+                    {
+                      "type": "Passed",
+                      "name": "",
+                      "pid": 35,
+                      "tag": 82,
+                      "data": "0a"
+                    },
+                    {
+                      "type": "Passed",
+                      "name": "",
+                      "pid": 35,
+                      "tag": 86,
+                      "data": "6465750900"
+                    },
+                    {
+                      "type": "Passed",
+                      "name": "",
+                      "pid": 1023,
+                      "tag": 82,
+                      "data": "09"
+                    },
+                    {
+                      "type": "Passed",
+                      "name": "",
+                      "pid": 1027,
+                      "tag": 106,
+                      "data": "ff42080000"
+                    },
+                    {
+                      "type": "Passed",
+                      "name": "",
+                      "pid": 1027,
+                      "tag": 10,
+                      "data": "64657501"
+                    },
+                    {
+                      "type": "Passed",
+                      "name": "",
+                      "pid": 1027,
+                      "tag": 82,
+                      "data": "07"
+                    },
+                    {
+                      "type": "Passed",
+                      "name": "",
+                      "pid": 1029,
+                      "tag": 111,
+                      "data": "0010e0"
+                    }
+                  ],
+                  "pmtRules": [],
+                  "pmtPidOrder": []
+                },
+                "vctSettings": {
+                  "tvctSettings": {
+                    "presence": null,
+                    "forceShortName": null,
+                    "shortName": null,
+                    "forceLongName": null,
+                    "longName": null,
+                    "forceChannelNumber": null,
+                    "majorChannelNumber": null,
+                    "minorChannelNumber": null,
+                    "modulationMode": null,
+                    "accessControlled": null,
+                    "hidden": null,
+                    "hideGuide": null,
+                    "serviceType": null,
+                    "forceSourceId": null,
+                    "sourceId": null,
+                    "ETMLocation": null
+                  },
+                  "cvctSettings": {
+                    "presence": null,
+                    "forceShortName": null,
+                    "shortName": null,
+                    "forceLongName": null,
+                    "longName": null,
+                    "forceChannelNumber": null,
+                    "majorChannelNumber": null,
+                    "minorChannelNumber": null,
+                    "modulationMode": null,
+                    "accessControlled": null,
+                    "hidden": null,
+                    "hideGuide": null,
+                    "serviceType": null,
+                    "forceSourceId": null,
+                    "sourceId": null,
+                    "ETMLocation": null,
+                    "pathSelect": null,
+                    "outOfBand": null
+                  }
+                }
+              },
+              "method": "PUT",
+              "schema": {
+                "$ref": "#/definitions/OutputServiceSiComponents"
+              },
+              "config": {
+                "sdtSettings": {
+                  "presence": "FollowInputPresence",
+                  "serviceType": "Transparent",
+                  "EIT_ScheduleFlag": "Transparent",
+                  "EIT_PresentFollowing": "Transparent",
+                  "runningStatus": "Transparent",
+                  "freeCA_Mode": "Transparent",
+                  "forceServiceProviderName": false,
+                  "HEVC_Details": {}
+                },
+                "pmtSettings": {
+                  "esTypeOverrules": [],
+                  "pmtDescriptors": [],
+                  "pmtRules": [],
+                  "pmtPidOrder": []
+                },
+                "vctSettings": {
+                  "tvctSettings": {},
+                  "cvctSettings": {}
+                }
+              }
+            }
+          },
+          "pids": {
+            "serviceUUID": "00010002-0000-0004-0000-000400000001",
+            "outputSID": 1,
+            "serviceName": "QVC HD",
+            "pmt": 99,
+            "pmtPid": {
+              "pid": 99,
+              "pidProperty": 1
+            },
+            "pcr": 1023,
+            "pcrPid": {
+              "pid": 1023,
+              "pidProperty": 1
+            },
+            "ecm": [],
+            "es": [
+              {
+                "pid": 35,
+                "sourcePid": 35,
+                "streamType": 6,
+                "streamTypeDescr": "DVB_EBU_TXT",
+                "language": [
+                  {
+                    "langCode": "deu",
+                    "audioType": 1
+                  }
+                ],
+                "pidProperty": 1,
+                "ecm": []
+              },
+              {
+                "pid": 1023,
+                "sourcePid": 1023,
+                "streamType": 27,
+                "streamTypeDescr": "MPEG_H264_Video",
+                "language": [],
+                "pidProperty": 1,
+                "ecm": []
+              },
+              {
+                "pid": 1027,
+                "sourcePid": 1027,
+                "streamType": 6,
+                "streamTypeDescr": "DVB_DolbyDigitalAudio",
+                "language": [
+                  {
+                    "langCode": "deu",
+                    "audioType": 1
+                  }
+                ],
+                "pidProperty": 1,
+                "ecm": []
+              },
+              {
+                "pid": 1029,
+                "sourcePid": 1029,
+                "streamType": 5,
+                "streamTypeDescr": "ApplicationInformationTable",
+                "language": [],
+                "pidProperty": 1,
+                "ecm": []
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "flows": [],
+    "worker": "migrate_1",
+    "flow_before": {},
+    "patch_rejection": "PATCH /api/v2/OutputTSs/00010002-0000-0004-0000-000000000001: HTTP 409: {\"id\": \"00010002-0000-0004-0000-000000000001\", \"url\": \"https://10.90.245.127:8443/api/v2/OutputTSs/00010002-0000-0004-0000-000000000001\", \"sw_ref\": \"1-2-4--\", \"errors\": [{\"field_name\": \"interface\", \"value\": \"Data1\", \"error\": \"Restricted to change the 'interface' value\"}]}",
+    "method": "create-verify-delete",
+    "temporary_name": "",
+    "last_create_response": {
+      "id": "00010000-0000-0000-0000-000000000001",
+      "url": "https://10.90.245.127:8443/api/v3/OutputServiceRoutings/00010000-0000-0000-0000-000000000001",
+      "inputService": {
+        "id": "00010002-0000-0002-0000-000100000001",
+        "url": "https://10.90.245.127:8443/api/v2/InputServices/00010002-0000-0002-0000-000100000001",
+        "sw_ref": "1-2-2-1-",
+        "source": {
+          "id": "00010002-0000-0002-0000-000000000001",
+          "url": "https://10.90.245.127:8443/api/v2/Sources/00010002-0000-0002-0000-000000000001",
+          "sw_ref": "1-2-2--",
+          "inputType": "XGRESS",
+          "xgressSettings": {
+            "interface": "Data2",
+            "vlanId": 0,
+            "sourceIp": "192.168.111.53",
+            "targetIp": "233.32.1.12",
+            "targetUdp": 50000,
+            "tsStandard": "DVB"
+          }
+        },
+        "inputType": "XGRESS",
+        "xgressSettings": {
+          "serviceId": 1,
+          "serviceUserName": "QVC HD"
+        }
+      },
+      "descrambledService": {
+        "descrambledServiceId": null
+      },
+      "processedService": {
+        "sourceId": null
+      },
+      "outputService": {
+        "id": "00010000-0000-0000-0000-000000000001",
+        "url": "https://10.90.245.127:8443/api/v2/OutputServices/00010000-0000-0000-0000-000000000001",
+        "sw_ref": "1-0-0-1-",
+        "outputTS": {
+          "id": "00010000-0000-0000-0000-000000000001",
+          "url": "https://10.90.245.127:8443/api/v2/OutputTSs/00010000-0000-0000-0000-000000000001",
+          "sw_ref": "1-0-0--",
+          "outputType": "XGRESS",
+          "interface": "Data1",
+          "targetIp": "235.1.1.3",
+          "targetUdp": 50000,
+          "vlan": {
+            "vlanId": null
+          }
+        },
+        "externalIdentifier": "",
+        "name": "QVC HD",
+        "sid": 1
+      }
+    },
+    "new_id": "00010000-0000-0000-0000-000000000001",
+    "last_new_service_id": "00010000-0000-0000-0000-000000000001",
+    "service_id_map": {
+      "00010002-0000-0004-0000-000400000001": "00010000-0000-0000-0000-000000000001"
+    },
+    "verified_replacement": {
+      "output": {
+        "outputType": "XGRESS",
+        "interface": "Data1",
+        "targetIp": "235.1.1.3",
+        "targetUdp": 50000,
+        "name": "",
+        "TSID": 1,
+        "ONID": 1,
+        "tags": [],
+        "sourceIPAddress": "Interface",
+        "sourceUdp": 8111,
+        "rateMode": "CBR",
+        "rate": 40000000,
+        "outputProtocol": "RTP",
+        "tableStandard": "DVB",
+        "streaming": "On",
+        "generateSyncUUID": true,
+        "TOS": 0,
+        "TTL": 64,
+        "UdpSize": 7,
+        "tsScrambling": {
+          "scramblingAction": "Scrambling",
+          "mode": "DvbScrambling",
+          "bissMode": "BISS_1",
+          "algorithm": "CSA",
+          "initializationVector": "00000000000000000000000000000000",
+          "forceScramblingBits": false,
+          "sparVariant": 0,
+          "controlWordSync": "Disabled_for_CW",
+          "clearStrongPairingEnforcement": false,
+          "operatingMode": "Simulcrypt",
+          "cwGenerationMode": "Conformance",
+          "packetsNotScrambled": "None",
+          "scrambledPercentage": 100,
+          "nullStuffingPackets": "Scrambled",
+          "scramblingDescriptor": "Disabled",
+          "allowEcmRemapping": false
+        },
+        "probeTS": {
+          "targetIp": "",
+          "targetUdp": 0
+        },
+        "URC_DataPidMeasurements": {
+          "mode": "Disabled",
+          "type": []
+        },
+        "alarmSettings": {
+          "payloadBitrateTooLow": {
+            "enable": false,
+            "threshold": 36000000,
+            "triggerForTsOutputLoss": true
+          },
+          "stuffingRateTooLow": {
+            "enable": false,
+            "threshold": 1000000,
+            "triggerForTsOutputLoss": true
+          },
+          "serviceLoss": {
+            "triggerForTsOutputLossForServiceLoss": "AnyOneService"
+          },
+          "serviceNotScrambled": {
+            "triggerForTsOutputLoss": true
+          }
+        },
+        "channelId": "",
+        "componentSharing": "ShareAlways",
+        "autoPassRules": {
+          "tsAutoPass": {
+            "removeAutoPassedOnRuleRemoval": true,
+            "removeServiceIfNotPresentInPAT": false,
+            "tsAutoPassRules": []
+          },
+          "serviceAutoPass": {
+            "passESs": true,
+            "passECMs": true,
+            "passES_ECMs": true
+          }
+        },
+        "vlan": {},
+        "tsFEC": {
+          "triggerMode": "Disabled",
+          "sendingArrangement": "BlockAligned",
+          "columnFEC": {},
+          "rowFEC": {},
+          "D_ColDepth": 6,
+          "L_RowLength": 10
+        },
+        "rip": {
+          "enable": false,
+          "normalMetric": 1,
+          "alarmMetric": 16,
+          "routeTag": 0
+        }
+      },
+      "parts": {
+        "Pids": {
+          "emm_pids": [],
+          "unref_pids": [],
+          "custom_service_pids": []
+        },
+        "SiComponents/AutoPassTables": {
+          "autoPassTables": []
+        },
+        "SiComponents/CatSettings": {
+          "insertCaDescriptorsInImportedCAT": false
+        },
+        "SiComponents/PatSettings": {
+          "NITinPATMode": "Auto"
+        },
+        "SiComponents/SiTables": {
+          "siTables": [
+            {
+              "identification": {
+                "tableId": 0,
+                "sidExt": 1
+              },
+              "output": {
+                "pidOverrule": false,
+                "generationMode": "Generate"
+              },
+              "source": {},
+              "proxy": {}
+            },
+            {
+              "identification": {
+                "tableId": 1
+              },
+              "output": {
+                "pidOverrule": false,
+                "generationMode": "Generate"
+              },
+              "source": {},
+              "proxy": {}
+            },
+            {
+              "identification": {
+                "tableId": 64,
+                "sidExt": 1
+              },
+              "output": {
+                "pidOverrule": false,
+                "generationMode": "Stop"
+              },
+              "source": {},
+              "proxy": {}
+            },
+            {
+              "identification": {
+                "tableId": 66,
+                "sidExt": 1
+              },
+              "output": {
+                "pidOverrule": false,
+                "generationMode": "Generate"
+              },
+              "source": {},
+              "proxy": {}
+            },
+            {
+              "identification": {
+                "tableId": 112
+              },
+              "output": {
+                "pidOverrule": false,
+                "generationMode": "Stop"
+              },
+              "source": {},
+              "proxy": {}
+            },
+            {
+              "identification": {
+                "tableId": 115
+              },
+              "output": {
+                "pidOverrule": false,
+                "generationMode": "Stop"
+              },
+              "source": {},
+              "proxy": {}
+            },
+            {
+              "identification": {
+                "tableId": 2,
+                "sidExt": 1
+              },
+              "output": {
+                "pidOverrule": false,
+                "generationMode": "Generate"
+              },
+              "source": {},
+              "proxy": {}
+            },
+            {
+              "identification": {
+                "tableId": 78,
+                "sidExt": 1
+              },
+              "output": {
+                "pidOverrule": false,
+                "generationMode": "Stop"
+              },
+              "source": {},
+              "proxy": {}
+            },
+            {
+              "identification": {
+                "tableId": 80,
+                "sidExt": 1
+              },
+              "output": {
+                "pidOverrule": false,
+                "generationMode": "Stop"
+              },
+              "source": {},
+              "proxy": {}
+            },
+            {
+              "identification": {
+                "tableId": 81,
+                "sidExt": 1
+              },
+              "output": {
+                "pidOverrule": false,
+                "generationMode": "Stop"
+              },
+              "source": {},
+              "proxy": {}
+            },
+            {
+              "identification": {
+                "tableId": 82,
+                "sidExt": 1
+              },
+              "output": {
+                "pidOverrule": false,
+                "generationMode": "Stop"
+              },
+              "source": {},
+              "proxy": {}
+            },
+            {
+              "identification": {
+                "tableId": 83,
+                "sidExt": 1
+              },
+              "output": {
+                "pidOverrule": false,
+                "generationMode": "Stop"
+              },
+              "source": {},
+              "proxy": {}
+            },
+            {
+              "identification": {
+                "tableId": 84,
+                "sidExt": 1
+              },
+              "output": {
+                "pidOverrule": false,
+                "generationMode": "Stop"
+              },
+              "source": {},
+              "proxy": {}
+            },
+            {
+              "identification": {
+                "tableId": 85,
+                "sidExt": 1
+              },
+              "output": {
+                "pidOverrule": false,
+                "generationMode": "Stop"
+              },
+              "source": {},
+              "proxy": {}
+            },
+            {
+              "identification": {
+                "tableId": 86,
+                "sidExt": 1
+              },
+              "output": {
+                "pidOverrule": false,
+                "generationMode": "Stop"
+              },
+              "source": {},
+              "proxy": {}
+            },
+            {
+              "identification": {
+                "tableId": 87,
+                "sidExt": 1
+              },
+              "output": {
+                "pidOverrule": false,
+                "generationMode": "Stop"
+              },
+              "source": {},
+              "proxy": {}
+            },
+            {
+              "identification": {
+                "tableId": 88,
+                "sidExt": 1
+              },
+              "output": {
+                "pidOverrule": false,
+                "generationMode": "Stop"
+              },
+              "source": {},
+              "proxy": {}
+            },
+            {
+              "identification": {
+                "tableId": 89,
+                "sidExt": 1
+              },
+              "output": {
+                "pidOverrule": false,
+                "generationMode": "Stop"
+              },
+              "source": {},
+              "proxy": {}
+            },
+            {
+              "identification": {
+                "tableId": 90,
+                "sidExt": 1
+              },
+              "output": {
+                "pidOverrule": false,
+                "generationMode": "Stop"
+              },
+              "source": {},
+              "proxy": {}
+            },
+            {
+              "identification": {
+                "tableId": 91,
+                "sidExt": 1
+              },
+              "output": {
+                "pidOverrule": false,
+                "generationMode": "Stop"
+              },
+              "source": {},
+              "proxy": {}
+            },
+            {
+              "identification": {
+                "tableId": 92,
+                "sidExt": 1
+              },
+              "output": {
+                "pidOverrule": false,
+                "generationMode": "Stop"
+              },
+              "source": {},
+              "proxy": {}
+            },
+            {
+              "identification": {
+                "tableId": 93,
+                "sidExt": 1
+              },
+              "output": {
+                "pidOverrule": false,
+                "generationMode": "Stop"
+              },
+              "source": {},
+              "proxy": {}
+            },
+            {
+              "identification": {
+                "tableId": 94,
+                "sidExt": 1
+              },
+              "output": {
+                "pidOverrule": false,
+                "generationMode": "Stop"
+              },
+              "source": {},
+              "proxy": {}
+            },
+            {
+              "identification": {
+                "tableId": 95,
+                "sidExt": 1
+              },
+              "output": {
+                "pidOverrule": false,
+                "generationMode": "Stop"
+              },
+              "source": {},
+              "proxy": {}
+            }
+          ],
+          "psipPidSettings": {},
+          "atscSettings": {
+            "psipGeneration": [],
+            "sttSettings": {},
+            "vctSettings": {
+              "cvctSettings": {},
+              "tvctSettings": {}
+            },
+            "triveniGuideBuilder": {}
+          }
+        },
+        "SiComponents/TablePlayout": {
+          "tablePlayout": [
+            {
+              "tableId": 0,
+              "tableType": 65535,
+              "interval": 500
+            },
+            {
+              "tableId": 1,
+              "tableType": 65535,
+              "interval": 500
+            },
+            {
+              "tableId": 2,
+              "tableType": 65535,
+              "interval": 500
+            },
+            {
+              "tableId": 64,
+              "tableType": 65535,
+              "interval": 10000
+            },
+            {
+              "tableId": 65,
+              "tableType": 65535,
+              "interval": 10000
+            },
+            {
+              "tableId": 66,
+              "tableType": 65535,
+              "interval": 2000
+            },
+            {
+              "tableId": 70,
+              "tableType": 65535,
+              "interval": 10000
+            },
+            {
+              "tableId": 74,
+              "tableType": 65535,
+              "interval": 10000
+            },
+            {
+              "tableId": 78,
+              "tableType": 65535,
+              "interval": 2000
+            },
+            {
+              "tableId": 79,
+              "tableType": 65535,
+              "interval": 10000
+            },
+            {
+              "tableId": 80,
+              "tableType": 65535,
+              "interval": 10000
+            },
+            {
+              "tableId": 81,
+              "tableType": 65535,
+              "interval": 10000
+            },
+            {
+              "tableId": 82,
+              "tableType": 65535,
+              "interval": 30000
+            },
+            {
+              "tableId": 83,
+              "tableType": 65535,
+              "interval": 30000
+            },
+            {
+              "tableId": 84,
+              "tableType": 65535,
+              "interval": 30000
+            },
+            {
+              "tableId": 85,
+              "tableType": 65535,
+              "interval": 30000
+            },
+            {
+              "tableId": 86,
+              "tableType": 65535,
+              "interval": 30000
+            },
+            {
+              "tableId": 87,
+              "tableType": 65535,
+              "interval": 30000
+            },
+            {
+              "tableId": 88,
+              "tableType": 65535,
+              "interval": 30000
+            },
+            {
+              "tableId": 89,
+              "tableType": 65535,
+              "interval": 30000
+            },
+            {
+              "tableId": 90,
+              "tableType": 65535,
+              "interval": 30000
+            },
+            {
+              "tableId": 91,
+              "tableType": 65535,
+              "interval": 30000
+            },
+            {
+              "tableId": 92,
+              "tableType": 65535,
+              "interval": 30000
+            },
+            {
+              "tableId": 93,
+              "tableType": 65535,
+              "interval": 30000
+            },
+            {
+              "tableId": 94,
+              "tableType": 65535,
+              "interval": 30000
+            },
+            {
+              "tableId": 95,
+              "tableType": 65535,
+              "interval": 30000
+            },
+            {
+              "tableId": 96,
+              "tableType": 65535,
+              "interval": 30000
+            },
+            {
+              "tableId": 97,
+              "tableType": 65535,
+              "interval": 30000
+            },
+            {
+              "tableId": 98,
+              "tableType": 65535,
+              "interval": 30000
+            },
+            {
+              "tableId": 99,
+              "tableType": 65535,
+              "interval": 30000
+            },
+            {
+              "tableId": 100,
+              "tableType": 65535,
+              "interval": 30000
+            },
+            {
+              "tableId": 101,
+              "tableType": 65535,
+              "interval": 30000
+            },
+            {
+              "tableId": 102,
+              "tableType": 65535,
+              "interval": 30000
+            },
+            {
+              "tableId": 103,
+              "tableType": 65535,
+              "interval": 30000
+            },
+            {
+              "tableId": 104,
+              "tableType": 65535,
+              "interval": 30000
+            },
+            {
+              "tableId": 105,
+              "tableType": 65535,
+              "interval": 30000
+            },
+            {
+              "tableId": 106,
+              "tableType": 65535,
+              "interval": 30000
+            },
+            {
+              "tableId": 107,
+              "tableType": 65535,
+              "interval": 30000
+            },
+            {
+              "tableId": 108,
+              "tableType": 65535,
+              "interval": 30000
+            },
+            {
+              "tableId": 109,
+              "tableType": 65535,
+              "interval": 30000
+            },
+            {
+              "tableId": 110,
+              "tableType": 65535,
+              "interval": 30000
+            },
+            {
+              "tableId": 111,
+              "tableType": 65535,
+              "interval": 30000
+            },
+            {
+              "tableId": 112,
+              "tableType": 65535,
+              "interval": 30000
+            },
+            {
+              "tableId": 115,
+              "tableType": 65535,
+              "interval": 30000
+            },
+            {
+              "tableId": 116,
+              "tableType": 65535,
+              "interval": 30000
+            },
+            {
+              "tableId": 192,
+              "tableType": 65535,
+              "interval": 175
+            },
+            {
+              "tableId": 193,
+              "tableType": 65535,
+              "interval": 250
+            }
+          ]
+        },
+        "SiComponents/TotSettings": {
+          "TOT_Descriptors": []
+        }
+      },
+      "collections": {
+        "RealignmentMux": [],
+        "SiComponents/OtherTables": []
+      },
+      "services": [
+        {
+          "output": {
+            "outputTS": {
+              "outputType": "XGRESS",
+              "interface": "Data1",
+              "targetIp": "235.1.1.3",
+              "targetUdp": 50000,
+              "vlan": {}
+            },
+            "externalIdentifier": "",
+            "name": "QVC HD",
+            "forceName": false,
+            "forceSID": false,
+            "sid": 1,
+            "streaming": "On",
+            "pids": [],
+            "alternatePCR": {
+              "enable": false
+            },
+            "scrambling": {
+              "mode": "Disabled",
+              "scrambleOnlyAV": false,
+              "blockCaInfo": false,
+              "powerKeySession": {},
+              "entitlementSessionId": 65535
+            },
+            "serviceBackup": {
+              "serviceBackupMode": "NonRevertive",
+              "delayMainToBackup": 0,
+              "delayBackupToMain": 10
+            },
+            "forceOutputSI": false
+          },
+          "routing": {
+            "id": "00010000-0000-0000-0000-000000000001",
+            "url": "https://10.90.245.127:8443/api/v3/OutputServiceRoutings/00010000-0000-0000-0000-000000000001",
+            "inputService": {
+              "id": "00010002-0000-0002-0000-000100000001",
+              "url": "https://10.90.245.127:8443/api/v2/InputServices/00010002-0000-0002-0000-000100000001",
+              "sw_ref": "1-2-2-1-",
+              "source": {
+                "id": "00010002-0000-0002-0000-000000000001",
+                "url": "https://10.90.245.127:8443/api/v2/Sources/00010002-0000-0002-0000-000000000001",
+                "sw_ref": "1-2-2--",
+                "inputType": "XGRESS",
+                "xgressSettings": {
+                  "interface": "Data2",
+                  "vlanId": 0,
+                  "sourceIp": "192.168.111.53",
+                  "targetIp": "233.32.1.12",
+                  "targetUdp": 50000,
+                  "tsStandard": "DVB"
+                }
+              },
+              "inputType": "XGRESS",
+              "xgressSettings": {
+                "serviceId": 1,
+                "serviceUserName": "QVC HD"
+              }
+            },
+            "descrambledService": {
+              "descrambledServiceId": null,
+              "descrambledServiceUrl": null
+            },
+            "processedService": {
+              "sourceId": null,
+              "sourceUrl": null
+            },
+            "outputService": {
+              "id": "00010000-0000-0000-0000-000000000001",
+              "url": "https://10.90.245.127:8443/api/v2/OutputServices/00010000-0000-0000-0000-000000000001",
+              "sw_ref": "1-0-0-1-",
+              "outputTS": {
+                "id": "00010000-0000-0000-0000-000000000001",
+                "url": "https://10.90.245.127:8443/api/v2/OutputTSs/00010000-0000-0000-0000-000000000001",
+                "sw_ref": "1-0-0--",
+                "outputType": "XGRESS",
+                "interface": "Data1",
+                "targetIp": "235.1.1.3",
+                "targetUdp": 50000,
+                "vlan": {
+                  "vlanId": null
+                }
+              },
+              "externalIdentifier": "",
+              "name": "QVC HD",
+              "sid": 1
+            }
+          },
+          "parts": {
+            "Alternates": {
+              "alternateSources": [
+                {
+                  "sourceServiceId": "00010002-0000-0002-0000-000100000001",
+                  "alternateSourceId": 0,
+                  "alternateSourceName": "Alt 0",
+                  "backupServices": [],
+                  "mergedServices": [],
+                  "mergedComponents": []
+                }
+              ]
+            },
+            "Components": {
+              "trackRules": []
+            },
+            "Processing": {
+              "lss": {
+                "mode": "Disabled",
+                "acquisitionPointId": "QVC HD",
+                "zoneId": "",
+                "poisBaseUrl": "",
+                "poisSecondaryUrl": "",
+                "signalProcessingEventPath": "",
+                "signalStateRequestPath": "",
+                "processStatusNotificationPath": ""
+              },
+              "blackOutMsg": {
+                "cueCommand": [
+                  "TimeSignal"
+                ],
+                "segmentationType": [
+                  16,
+                  17,
+                  19,
+                  20
+                ],
+                "callOutMode": "BlackoutOnlyOnMain",
+                "calloutForOutOfBandCue": false
+              },
+              "dpi": {
+                "mode": "Disabled",
+                "adInsertion": {
+                  "options": {
+                    "scte35Type6to5Conversion": {
+                      "segTypeIdList": []
+                    },
+                    "scte35PidFilter": []
+                  }
+                },
+                "nextGenAdInsertion": {
+                  "options": {
+                    "scte35PidFilter": []
+                  },
+                  "server": {
+                    "adsSettings": []
+                  },
+                  "NGIAdPrefetchAndTranscode": {}
+                },
+                "lpi": {
+                  "options": {
+                    "scte35PidFilter": []
+                  },
+                  "pids": [],
+                  "triggers": []
+                },
+                "seamlessAlternates": {
+                  "options": {}
+                }
+              },
+              "pidSyncDelay": [],
+              "scte35SplitFilter": {
+                "blockOriginalScte35": true,
+                "splitFilters": []
+              },
+              "scte35Settings": {
+                "tierSettings": {
+                  "enabled": false,
+                  "segmentationTiers": [],
+                  "defaultTiers": [],
+                  "providerTiers": []
+                }
+              }
+            },
+            "SiComponents": {
+              "sdtSettings": {
+                "presence": "FollowInputPresence",
+                "serviceType": "Transparent",
+                "EIT_ScheduleFlag": "Transparent",
+                "EIT_PresentFollowing": "Transparent",
+                "runningStatus": "Transparent",
+                "freeCA_Mode": "Transparent",
+                "forceServiceProviderName": false,
+                "HEVC_Details": {}
+              },
+              "pmtSettings": {
+                "esTypeOverrules": [],
+                "pmtDescriptors": [],
+                "pmtRules": [],
+                "pmtPidOrder": []
+              },
+              "vctSettings": {
+                "tvctSettings": {},
+                "cvctSettings": {}
+              }
+            }
+          },
+          "activation": {
+            "active": 0,
+            "groups": [
+              {
+                "activeAlternateIndex": 0,
+                "activeBackupIndex": 0,
+                "mergedServicesBackup": []
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "duration_seconds": 171.92079425
+  }
+]
