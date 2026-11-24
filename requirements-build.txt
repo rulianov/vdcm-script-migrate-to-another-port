@@ -1,0 +1,7 @@
+altgraph==0.17.5
+importlib-metadata==8.7.1
+packaging==26.3
+pyinstaller==6.16.0
+pyinstaller-hooks-contrib==2026.10
+setuptools==53.0.0
+zipp==3.23.1

@@ -1,0 +1,23 @@
+{
+  "verified_outputs": [
+    {
+      "original_id": "00010002-0000-0015-0000-000000000001",
+      "restored_id": "00010002-0000-0015-0000-000000000001",
+      "folder": [
+        "TESTFOLDER"
+      ],
+      "configuration_graph_equal": true
+    },
+    {
+      "original_id": "00010002-0000-0017-0000-000000000001",
+      "restored_id": "00010002-0000-0017-0000-000000000001",
+      "folder": [
+        "TESTFOLDER"
+      ],
+      "configuration_graph_equal": true
+    }
+  ],
+  "total_output_count": 24,
+  "complete_inventory_equal": true,
+  "system_python_lookup_disabled_during_binary_runs": true
+}

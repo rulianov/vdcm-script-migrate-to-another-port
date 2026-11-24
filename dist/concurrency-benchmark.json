@@ -1,0 +1,55 @@
+{
+  "measurements": [
+    {
+      "workers": 1,
+      "outputs": 64,
+      "migration_seconds": 277.2294165890198,
+      "outputs_per_second": 0.2308557323657941,
+      "total_seconds": 319.40279620792717,
+      "p95_seconds": 5.081013431074098,
+      "outputs_per_minute": 13.851343941947645
+    },
+    {
+      "workers": 2,
+      "outputs": 64,
+      "migration_seconds": 207.09990018594544,
+      "outputs_per_second": 0.30902960330998397,
+      "total_seconds": 240.78370130597614,
+      "p95_seconds": 10.282155359978788,
+      "outputs_per_minute": 18.541776198599038
+    },
+    {
+      "workers": 4,
+      "outputs": 64,
+      "migration_seconds": 184.58662961109076,
+      "outputs_per_second": 0.34672067058617884,
+      "total_seconds": 214.7473022940103,
+      "p95_seconds": 13.696174463955685,
+      "outputs_per_minute": 20.80324023517073
+    },
+    {
+      "workers": 8,
+      "outputs": 64,
+      "migration_seconds": 181.14662135310937,
+      "outputs_per_second": 0.3533049610417227,
+      "total_seconds": 210.5338575131027,
+      "p95_seconds": 26.057440650998615,
+      "outputs_per_minute": 21.198297662503364
+    }
+  ],
+  "recommended_workers": 4,
+  "selection_rule": "Smallest tested worker count within 5% of fastest error-free throughput",
+  "original_inventory_equal_after_cleanup": true,
+  "temporary_outputs": 32,
+  "completed_migrations": 256,
+  "unsuccessful": 0,
+  "linux_host": "Rocky Linux 9.8 x86_64",
+  "workload": "Non-streaming copies of two real output/service configurations; full configuration, folder, routing and PID verification; both directions",
+  "report": "benchmark-9a4d01e29caf/benchmark.json",
+  "benchmark_binary_sha256": "f544d0cc2a1620a2436c69e6717f5367d49b7b69fda4551d973cc10938ac5658",
+  "benchmark_source_sha256": "8a2210e0804532e8b0e9c6a52b9157784c701a77ea42f6667ba6074856b22dd8",
+  "production_binary_sha256": "30dc4906b47c5f17ecb40061ad0491470242de1cec71f514196a8c824fe7ea99",
+  "production_source_sha256": "4ce2d80331b9b3ccc5760b043e7ef1ab053f7ea6e06d6f63f09a4615e15af010",
+  "production_default_workers": 4,
+  "production_dry_run_without_system_python": "dist/runs/20261113T185412Z-c2872e97"
+}
